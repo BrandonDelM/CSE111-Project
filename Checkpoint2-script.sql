@@ -64,13 +64,16 @@ CREATE TABLE Building (
 	abbreviation VARCHAR(150) NOT NULL
 );
 
+--Changed room_number to VARCHAR(150)
 CREATE TABLE Room (
     room_id INTEGER PRIMARY KEY,
     building_id INTEGER,
-    room_number INTEGER,
+    room_number VARCHAR(150),
     room_type VARCHAR(150) NOT NULL,
     capacity INTEGER NOT NULL
 );
+
+DROP TABLE IF EXISTS Room;
 
 CREATE TABLE memberOf (
     id INTEGER PRIMARY KEY,

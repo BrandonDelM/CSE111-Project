@@ -12,7 +12,7 @@ def delete_from_table(conn: Connection, table: str):
     conn.commit()
 
 def load_clubs(conn: Connection):
-    with open('org.json', 'r') as file:
+    with open('./data/org.json', 'r') as file:
         orgs: json = json.load(file)
     cursor = conn.cursor()
 
@@ -25,7 +25,7 @@ def load_clubs(conn: Connection):
     conn.commit()
 
 def load_events(conn: Connection):
-    with open('events.json', 'r') as file:
+    with open('./data/events.json', 'r') as file:
         events: json = json.load(file)
     cursor = conn.cursor()
 
@@ -44,5 +44,54 @@ def load_events(conn: Connection):
 
     conn.commit()
 
-delete_from_table(conn, 'Event')
-load_events(conn)
+def load_buildings(conn: Connection):
+    with open('./data/buildings.json', 'r') as file:
+        data: json = json.load(file)
+    cursor = conn.cursor()
+
+    buildings = data['data']
+
+    data = [(i,
+             building[2],
+             building[1]
+             ) for i, building in enumerate(buildings, start=1)]
+
+    cursor.executemany("""
+        INSERT OR IGNORE INTO Building VALUES (?,?,?)
+    """, (data))
+
+    conn.commit()
+
+def load_rooms(conn: Connection):
+    with open('./data/rooms.json', 'r') as file:
+        data: json = json.load(file)
+    cursor = conn.cursor()
+
+    rooms = data['data']
+
+    data: list = []
+    for i in range(1, len(rooms)):
+        cursor.execute("""
+                    SELECT building_id
+                    FROM Building
+                    WHERE abbreviation = ?
+                """, (rooms[i][5],))
+
+        
+        room_id = i
+        building_id = cursor.fetchone()[0]
+        room_num = rooms[i][1]
+        room_type = rooms[i][3]
+        capacity = rooms[i][2]
+
+        data.append((room_id, building_id, room_num, room_type, capacity))
+
+    cursor.executemany("""
+        INSERT OR IGNORE INTO Room VALUES (?,?,?,?,?)
+    """, (data))
+
+    conn.commit()
+
+
+delete_from_table(conn, 'Room')
+load_rooms(conn)
