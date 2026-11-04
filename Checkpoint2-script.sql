@@ -45,15 +45,18 @@ CREATE TABLE EventAttendance (
 	ateendee_date 
 );
 
+--BTW, added VARCHAR(150) to location, date, start_time, and end_time
 CREATE TABLE Event (
     event_id INTEGER PRIMARY KEY,
     event_name VARCHAR(150) NOT NULL,
     club_name VARCHAR(150) NOT NULL,
-    location,
-    date,
-    start_time,
-    end_time
+    location VARCHAR(150),
+    date VARCHAR(150),
+    start_time VARCHAR(150),
+    end_time VARCHAR(150)
 );
+
+DROP TABLE Event;
 
 CREATE TABLE Building (
 	building_id INTEGER PRIMARY KEY,
