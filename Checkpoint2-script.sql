@@ -19,11 +19,12 @@ CREATE TABLE Student (
     ON DELETE RESTRICT
 );
 
+--Added VARCHAR(150) to department_name, school_name, and club_affiliation
 CREATE TABLE Faculty (
     id INTEGER PRIMARY KEY,
-    department_name,
-    school_name,
-    club_affiliation,
+    department_name VARCHAR(150),
+    school_name VARCHAR(150),
+    club_affiliation VARCHAR(150),
     first_name VARCHAR(150) NOT NULL,
     last_name VARCHAR(150) NOT NULL,
     email_name VARCHAR(150) NOT NULL,

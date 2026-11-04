@@ -3,6 +3,9 @@ from sqlite3 import Error
 from sqlite3 import Connection
 import json
 from datetime import datetime
+import requests
+from bs4 import BeautifulSoup
+#Need to install lxml (pip install xmlx)
 
 conn = sqlite3.connect("Checkpoint2-dbase.sqlite3")
 
@@ -92,6 +95,22 @@ def load_rooms(conn: Connection):
 
     conn.commit()
 
+def load_faculty(conn: Connection):
+    cursor = conn.cursor()
+    request = requests.get("https://idm.ucmerced.edu/idm/directory/matchEntries/OS/professor/0/330")
+    # print(request.text)
+    data = json.loads(request.text)
+    faculties = data['directoryEntries']
+    # with open("output.txt", "w", encoding="utf-8") as file:
+    #     file.write(str(data))
 
-delete_from_table(conn, 'Room')
-load_rooms(conn)
+    data = [(i, faculty['departments'][0]['departmentTitle'], faculty['departments'][0]['departmentTitle'], None, faculty['firstName'], faculty['lastName'], faculty['email']) for i, faculty in enumerate(faculties)]
+    cursor.executemany("""
+        INSERT OR IGNORE INTO Faculty VALUES (?,?,?,?,?,?,?)
+    """, (data))
+
+    conn.commit()
+
+
+delete_from_table(conn, 'Faculty')
+load_faculty(conn)
