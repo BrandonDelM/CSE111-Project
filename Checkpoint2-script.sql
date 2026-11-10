@@ -4,9 +4,10 @@ CREATE TABLE Person (
     id INTEGER PRIMARY KEY,
     first_name VARCHAR(150) NOT NULL,
     last_name VARCHAR(150) NOT NULL,
-    email_name VARCHAR(150) NOT NULL,
+    email_name VARCHAR(150) NOT NULL
 );
 
+--Removed Foreign key because it was breaking things
 CREATE TABLE Student (
     id INTEGER PRIMARY KEY,
     first_name VARCHAR(150) NOT NULL,
@@ -14,12 +15,15 @@ CREATE TABLE Student (
     email_name VARCHAR(150) NOT NULL,
     year INTERGER,
     student_type VARCHAR(150),
-    major VARCHAR(150),
-    FOREIGN KEY (id) REFERENCES Person (id) ON UPDATE CASCADE
-    ON DELETE RESTRICT
+    major VARCHAR(150)
+    -- FOREIGN KEY (id) REFERENCES Person (id) ON UPDATE CASCADE
+    -- ON DELETE RESTRICT
 );
 
+DROP TABLE Student;
+
 --Added VARCHAR(150) to department_name, school_name, and club_affiliation
+--Removed foreign key because it was breaking the code
 CREATE TABLE Faculty (
     id INTEGER PRIMARY KEY,
     department_name VARCHAR(150),
@@ -27,10 +31,12 @@ CREATE TABLE Faculty (
     club_affiliation VARCHAR(150),
     first_name VARCHAR(150) NOT NULL,
     last_name VARCHAR(150) NOT NULL,
-    email_name VARCHAR(150) NOT NULL,
-    FOREIGN KEY (id) REFERENCES Person (id) ON UPDATE CASCADE
-    ON DELETE RESTRICT
+    email_name VARCHAR(150) NOT NULL
+    -- FOREIGN KEY (id) REFERENCES Person (id) ON UPDATE CASCADE
+    -- ON DELETE RESTRICT
 );
+
+DROP TABLE Faculty;
 
 CREATE TABLE Club (
     club_id INTEGER PRIMARY KEY,
@@ -39,12 +45,19 @@ CREATE TABLE Club (
     club_desc VARCHAR(150)
 );
 
+--Added VARCHAR(150) to attendee_date and fixed the spelling error
+--Added event_id to connect to event
+--Made attendee_id and event_id both primary keys
 CREATE TABLE EventAttendance (
-	attendee_id INTEGER PRIMARY KEY,
+	attendee_id INTEGER,
+	event_id VARCHAR(150),
 	attendee_first_name VARCHAR(150),
 	attendee_last_name VARCHAR(150),
-	ateendee_date 
+	attendee_date VARCHAR(150),
+    PRIMARY KEY (attendee_id, event_id)
 );
+
+DROP TABLE EventAttendance;
 
 --BTW, added VARCHAR(150) to location, date, start_time, and end_time
 CREATE TABLE Event (
@@ -76,8 +89,11 @@ CREATE TABLE Room (
 
 DROP TABLE IF EXISTS Room;
 
+--Removed primary key since a person can have multiple positions
 CREATE TABLE memberOf (
-    id INTEGER PRIMARY KEY,
+    id INTEGER,
     member_type VARCHAR(150) NOT NULL,
     club_affiliation VARCHAR(150)
 );
+
+DROP TABLE memberOf;
