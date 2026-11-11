@@ -72,6 +72,41 @@ PRAGMA foreign_keys = ON;
 -- SECTION 1: SIMPLE STATEMENTS (Statements 1 to 10)
 -- ============================================================================
 
+-- ----------------------------------------------------------------------------
+-- Statement 01: First year students 
+-- Explanation: Lists the name, year, and major of all the first year students.
+-- ----------------------------------------------------------------------------
+SELECT first_name, last_name, year, major
+FROM Student
+WHERE year = '1st Year';
+
+-- ----------------------------------------------------------------------------
+-- Statement 02: Physics faculty
+-- Explanation: Retrieve the name and email of all the faculty in the physics 
+--                  department.
+-- ----------------------------------------------------------------------------
+SELECT first_name, last_name, email_name
+FROM Faculty
+WHERE department_name = 'Physics';
+
+-- ----------------------------------------------------------------------------
+-- Statement 03: All students in database
+-- Explanation: Retreives the id, name, email, year, student type, and
+--                   major of all students
+-- ----------------------------------------------------------------------------
+SELECT year, COUNT(*)
+FROM Student
+GROUP BY year;
+
+-- ----------------------------------------------------------------------------
+-- Statement 04: All faculty members in database
+-- Explanation: Retreives the id, department name, school name, 
+--                  club affiliation, name, and email  of all the faculty 
+--                  members in the database. 
+-- ----------------------------------------------------------------------------
+SELECT department_name, COUNT(*)
+FROM Faculty
+GROUP BY department_name;
 
 
 -- ============================================================================
