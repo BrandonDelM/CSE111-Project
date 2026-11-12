@@ -1,5 +1,10 @@
 -- REFERENCE FOR SCHEMA
 
+-- to check queries from test database paste in terminal:
+-- sqlite3 -bail cp2-test-db.sqlite3 ".read Checkpoint2-script.sql" > query-results.txt 2>&1
+        -- puts output in query-results and stops at first error found & sends error message to the file
+
+
 --------------- paste in terminal for quick check of schema--------------------
 SELECT name, sql
 FROM sqlite_master

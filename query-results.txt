@@ -1,0 +1,527 @@
+
+-------------------------------------------------------------
+========== SECTION 1: QUERY 1: First year students ==========
+  first_name              last_name               year                             major
+--------------  ------------------------------  --------  --------------------------------------------------------
+Sheizan         Bawa                            1st Year  Artificial Intelligence
+Thomas          Vasquez                         1st Year  History
+Laura           Herrera Trejo                   1st Year  Computer Science and Engineering
+Ahmed           Al-Ariemy                       1st Year  Chicanx Studies
+Brandon         Bang                            1st Year  Philosophy
+Emilio          Vazquez                         1st Year  Management and Business Economics
+Sarina          Bassi                           1st Year  Global Arts Studies
+Naheed          Akbari                          1st Year  Environmental Engineering
+Melvin          Diaz Alfaro                     1st Year  Biochemical and Biomolecular Engineering
+Aida            Garcia Jimenez                  1st Year  Biochemical and Biomolecular Engineering
+Dezhane         Brown Churchill                 1st Year  Aerospace Engineering
+Alejandro       Naranjo                         1st Year  Materials Science and Engineering
+Amber           Rooney                          1st Year  Electrical Engineering
+Rowan           Riley                           1st Year  Aerospace Engineering
+Haylei          Gutierrez-Morales               1st Year  Artificial Intelligence
+Yesenia         Campos                          1st Year  Cognitive Science
+Jose            Perez                           1st Year  Physics
+Qingyun         Chen                            1st Year  Ecology, Evolution, and Conservation Biology
+Salena          Zamora                          1st Year  Spanish
+Isaías          Pérez                           1st Year  Chicanx Studies
+Joseph          Leyva                           1st Year  Applied Mathematical Sciences
+Erwin           Rodriguez                       1st Year  Chicanx Studies
+Sela            Howe                            1st Year  Ecology, Evolution, and Conservation Biology
+Abiezer         Arauza                          1st Year  Writing Studies
+Jace            Luu                             1st Year  Chicanx Studies
+Oluwatimilehin  Fatoki                          1st Year  Cognitive Science
+Darianna        Sanchez Munoz                   1st Year  Business Administration
+Natalie         Macias                          1st Year  Electrical Engineering
+Emily           Centeno                         1st Year  Community Research and Service
+Damian          Rubio                           1st Year  Computer Science
+Maria           Amado                           1st Year  Ecology, Evolution, and Conservation Biology
+Sukhman         Kaur                            1st Year  Management of Innovation, Sustainability, and Technology
+Angelica        Sanchez                         1st Year  American Studies
+Jose            Tupul Salanic                   1st Year  Science, Technology, and Ethics
+Dennis          Valladares                      1st Year  Public Health
+Clarissa        Mounce                          1st Year  Literatures in English
+Manuel          Bences                          1st Year  Anthropology
+Luis            Martinez                        1st Year  Cognitive Science
+Sabrina         Rodriguez                       1st Year  Biological Sciences
+andrew          mullins                         1st Year  Psychology
+Chidubem        Akanegbu                        1st Year  Bioengineering
+Diego           Sanchez                         1st Year  Public Health
+Veronica        Nava Solorio                    1st Year  History
+Cynthia         Aguilar                         1st Year  History
+Gabriela        Ceja                            1st Year  Liberal Studies
+Isabel          Vazquez                         1st Year  Economics
+Isabel          Garcia                          1st Year  Environmental Systems Science
+Emanuel         Angel                           1st Year  Environmental Humanities
+Alex            Gonzalez                        1st Year  Neuroscience
+Lynnae          Manghane                        1st Year  Physics
+Vanessa         Arredondo                       1st Year  Communication and Media
+Jade            Wencez                          1st Year  Electrical Engineering
+Adrian          Medina                          1st Year  Public Health
+zahieh          Debbas                          1st Year  Critical Race and Ethnic Studies
+Mya             Dickerson                       1st Year  Economics
+Soichi          Matoba                          1st Year  Chemical Engineering
+Gianluka        Santacruz                       1st Year  Spanish
+david           chukwuemeka                     1st Year  American Studies
+Esmeralda       Vargas                          1st Year  Physics
+Mari            Modesto                         1st Year  Biochemistry
+Lauren          Lane                            1st Year  Mechanical Engineering
+Evan            Ceja                            1st Year  Natural Sciences Education
+John            Dupree III                      1st Year  American Studies
+Jelany          Ajiataz                         1st Year  Applied Mathematical Sciences
+Jonathan        Lay                             1st Year  Anthropology
+Nadine          Green                           1st Year  Sociology
+Ashley          Hernandez-Ruiz                  1st Year  Management and Business Economics
+Emi             Villavicencio                   1st Year  American Studies
+Jair            Flores                          1st Year  Liberal Studies
+Adamaris        Alvarado Cervantes              1st Year  Mechanical Engineering
+jared           schnake                         1st Year  Physics
+Josh            Bonilla                         1st Year  Literatures in English
+Christopher     Alvarez                         1st Year  Science, Technology, and Ethics
+Josue           Gonzalez Ojeda                  1st Year  Civil Engineering
+Jennifer        Palafox                         1st Year  Political Science
+Kenji           Vang                            1st Year  Literatures in English
+Jalen           Madison                         1st Year  Aerospace Engineering
+Avril           Martinez                        1st Year  Data Science and Analytics
+De'Ja           Roeurn                          1st Year  Data Science and Analytics
+Jonathan        Gomez                           1st Year  Mechanical Engineering
+Tien            Villegas                        1st Year  Materials Science and Engineering
+Seth            Gilbert                         1st Year  Chemistry
+Jermaine        Heron                           1st Year  Global Arts Studies
+Gaby            Olivares                        1st Year  Management Analytics and Decision-Making
+Louis           Cortes Patricio                 1st Year  Electrical Engineering
+Isabella        Diaz                            1st Year  Electrical Engineering
+Kevin           Vang                            1st Year  Political Science
+Andrea          Ugalde Morales                  1st Year  Biological Sciences
+Alexis          Esquivel                        1st Year  Liberal Studies
+Hitzel          Huitzil-Vera                    1st Year  Cognitive Science
+Alyssa          Gautreaux                       1st Year  Literatures in English
+Ex'Ellynce      Logan                           1st Year  Aerospace Engineering
+Carlos          Mondragon Alvarez Del Castillo  1st Year  Communication and Media
+Katerina        Rodriguez                       1st Year  Chicanx Studies
+Junior          Mendoza                         1st Year  Artificial Intelligence
+Sherly          Becerra                         1st Year  Applied Mathematical Sciences
+Noah            Smith                           1st Year  Computer Science
+Martiana        Bell                            1st Year  Liberal Studies
+Merlyn          Lopez                           1st Year  Bioengineering
+Gabrielle       Samiy                           1st Year  Data Science and Computing
+Adriana         Turcios Grande                  1st Year  Biochemistry
+Efrain          Cecilio                         1st Year  Liberal Studies
+Armaan          Wahid                           1st Year  Biochemical and Biomolecular Engineering
+
+---------------------------------------------------------
+========== SECTION 2: QUERY 2: Physics faculty ==========
+first_name  last_name          email_name
+----------  ----------  ------------------------
+Jay         Sharping    jsharping@ucmerced.edu
+Linda       Hirst       lhirst@ucmerced.edu
+Ajay        Gopinathan  agopinathan@ucmerced.edu
+Sayantani   Ghosh       sghosh@ucmerced.edu
+Kevin       Mitchell    kmitchell@ucmerced.edu
+Bin         Liu         bliu27@ucmerced.edu
+Dustin      Kleckner    dkleckner@ucmerced.edu
+Raymond     Chiao       rchiao@ucmerced.edu
+Anna        Nierenberg  anierenberg@ucmerced.edu
+Sarah       Loebman     sloebman@ucmerced.edu
+Kinjal      Dasbiswas   kdasbiswas@ucmerced.edu
+Hui         Cai         hcai6@ucmerced.edu
+David       Strubbe     dstrubbe@ucmerced.edu
+Jing        Xu          jxu8@ucmerced.edu
+
+------------------------------------------------------------------
+========== SECTION 1: QUERY 3: All students in database ==========
+  year    COUNT(*)
+--------  --------
+1st Year       103
+2nd Year       107
+3rd Year       108
+4th Year       114
+
+-------------------------------------------------------------------------
+========== SECTION 1: QUERY 4: All faculty members in database ==========
+             department_name               COUNT(*)
+-----------------------------------------  --------
+Anthropology & Heritage Studies                   9
+Applied Mathematics                              20
+Bioengineering                                    9
+Chemical & Materials Engineering                 11
+Chemistry & Biochemistry                         13
+Civil & Environmental Engineering                18
+Cognitive and Information Sciences                9
+Computer Science & Engineering                   19
+Economics and Business Management                10
+Electrical Engineering                            7
+Global Arts, Media and Writing Studies           17
+History, Critical Race and Ethnic Studies        13
+Life & Environmental Sciences                    16
+Literatures, Languages, and Cultures             13
+Mail and Doc Svs                                  1
+Management of Complex Systems                    11
+Mechanical and Aerospace Engineering             18
+Medical Education                                 1
+Molecular Cell Biology                           18
+Philosophy                                        1
+Physics                                          14
+Political Science                                 9
+Psychological Sciences                           24
+Public Health                                    14
+Sociology                                        13
+
+-----------------------------------------
+========== SECTION 2: QUERY 1: ==========
+' '
+---
+
+                         club_name                                                         event_name                                                                                     club_type
+------------------------------------------------------------  --------------------------------------------------------------------  ---------------------------------------------------------------------------------------------------------------------
+Actuarial Science Club                                        1st General Meeting                                                   Professional, Academic
+Actuarial Science Club                                        General Meeting                                                       Professional, Academic
+Agricultural Insects & Plants                                 Sowing for the Season                                                 Academic, Graduate Student Organization, Undergraduate Student Organization, Special Interest
+Agricultural Insects & Plants                                 Sowing for the Season                                                 Academic, Graduate Student Organization, Undergraduate Student Organization, Special Interest
+American Institute of Chemical Engineers at UC Merced         Engineering Writing Tips!                                             Academic, Social, Professional
+American Institute of Chemical Engineers at UC Merced         Engineering Writing Tips!                                             Academic, Social, Professional
+American Institute of Chemical Engineers at UC Merced         Guest Speaker Roberto Andresen Eguiluz                                Academic, Social, Professional
+American Institute of Chemical Engineers at UC Merced         Movie Night!                                                          Academic, Social, Professional
+American Institute of Chemical Engineers at UC Merced         Spherification Lab                                                    Academic, Social, Professional
+American Institute of Chemical Engineers at UC Merced         Spooky Sips!                                                          Academic, Social, Professional
+American Institute of Chemical Engineers at UC Merced         Trick or Slime                                                        Academic, Social, Professional
+Asian Pacific American Medical Student Association UC Merced  APAMSA General Meeting                                                Medical/Health, Academic, Community Service
+Asian Pacific American Medical Student Association UC Merced  Bobcat Band Tabling                                                   Medical/Health, Academic, Community Service
+Asian Pacific American Medical Student Association UC Merced  UROC Application Workshop                                             Medical/Health, Academic, Community Service
+Black Student Union                                           BSU's Brownie Sale                                                    Academic, Community Service, Cultural, Leadership, Social, Undergraduate Student Organization, Advocacy
+Black Student Union                                           My Black Job, is to Use My Black Vote.                                Academic, Community Service, Cultural, Leadership, Social, Undergraduate Student Organization, Advocacy
+Bobcat Mock Trial                                             General Mock Trial Meeting                                            Academic, Leadership, Professional
+Bobcat Mock Trial                                             General Mock Trial Meeting                                            Academic, Leadership, Professional
+Bobcat Mock Trial                                             General Mock Trial Meeting                                            Academic, Leadership, Professional
+Bobcat Mock Trial                                             General Mock Trial Meeting                                            Academic, Leadership, Professional
+Bobcat Mock Trial                                             General Mock Trial Meeting                                            Academic, Leadership, Professional
+Bobcat Mock Trial                                             General Mock Trial Meeting                                            Academic, Leadership, Professional
+Bobcat Mock Trial                                             General Mock Trial Meeting                                            Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Mock Trial Competition Practice                                       Academic, Leadership, Professional
+Bobcat Mock Trial                                             Study with Mock Trial                                                 Academic, Leadership, Professional
+Bobcat Mock Trial                                             Study with Mock Trial                                                 Academic, Leadership, Professional
+Delta Epsilon Mu                                              Annual Fall Showcase                                                  Undergraduate Student Organization, Professional, Wellness, Fraternity & Sorority, Leadership, Academic
+Delta Epsilon Mu                                              DEMThrifts                                                            Undergraduate Student Organization, Professional, Wellness, Fraternity & Sorority, Leadership, Academic
+Delta Epsilon Mu                                              DEMThrifts                                                            Undergraduate Student Organization, Professional, Wellness, Fraternity & Sorority, Leadership, Academic
+Diversified Doctors                                           Diversified Doctors Tabling                                           Professional, Undergraduate Student Organization, Academic
+East African Student Association                              Electric Chair                                                        Social, Academic, Cultural
+East African Student Association                              Find your Match                                                       Social, Academic, Cultural
+Economics Club                                                Econ Club Current Events Discussion                                   Special Interest, Academic
+Economics Club                                                Economics Club General Meeting #4                                     Special Interest, Academic
+Economics Club                                                Economics Club Study Session                                          Special Interest, Academic
+Economics Club                                                Economics Club's Scavenger Hunt                                       Special Interest, Academic
+Future Industrial Organizational Psychologists                FIOP Bi-Weekly Meeting                                                Special Interest, Professional, Undergraduate Student Organization, Social, Academic
+Future Industrial Organizational Psychologists                FIOP Bi-Weekly Meeting                                                Special Interest, Professional, Undergraduate Student Organization, Social, Academic
+Future Industrial Organizational Psychologists                FIOP Biweekly Meeting                                                 Special Interest, Professional, Undergraduate Student Organization, Social, Academic
+Future Industrial Organizational Psychologists                FIOP Biweekly Meeting                                                 Special Interest, Professional, Undergraduate Student Organization, Social, Academic
+Future Industrial Organizational Psychologists                FIOP Biweekly Meeting                                                 Special Interest, Professional, Undergraduate Student Organization, Social, Academic
+Global Med Collective                                         First GMC Meeting                                                     Undergraduate Student Organization, Professional, Advocacy, Medical/Health, Academic, Community Service
+Global Med Collective                                         GMC- Meet a Doctor                                                    Undergraduate Student Organization, Professional, Advocacy, Medical/Health, Academic, Community Service
+Global Med Collective                                         General Body Meeting                                                  Undergraduate Student Organization, Professional, Advocacy, Medical/Health, Academic, Community Service
+Global Med Collective                                         Trunk or Treat                                                        Undergraduate Student Organization, Professional, Advocacy, Medical/Health, Academic, Community Service
+Hermanas Unidas                                               Hermanas Unidas Leaf Craft Meeting                                    Cultural, Community Service, Academic, Social, Undergraduate Student Organization
+Hermanas Unidas                                               Hermanas Unidas Tabling                                               Cultural, Community Service, Academic, Social, Undergraduate Student Organization
+Institute of Electrical and Electronics Engineers             IEEE @ UC Merced - LLM Workshop                                       Academic
+La Familia                                                    Culinary Night GB Meeting                                             Wellness, Social, Leadership, Academic, Community Service, Cultural
+La Familia                                                    Dia de Los Muertos GB Meeting                                         Wellness, Social, Leadership, Academic, Community Service, Cultural
+La Familia                                                    Hot Chocolate Fundraiser                                              Wellness, Social, Leadership, Academic, Community Service, Cultural
+La Familia                                                    La Familia Steering Hunt GB Meeting                                   Wellness, Social, Leadership, Academic, Community Service, Cultural
+La Familia                                                    Let's talk about Mental Health! GB Meeting                            Wellness, Social, Leadership, Academic, Community Service, Cultural
+Materials Research Society                                    Intro to Finding Sources and Reading Them with MRS                    Professional, Academic, Leadership
+Materials Research Society                                    Lawrence Livermore Research Lab Presenter with MRS                    Professional, Academic, Leadership
+Materials Research Society                                    Literature Review with MRS                                            Professional, Academic, Leadership
+Materials Research Society                                    MRS Bonfire Night                                                     Professional, Academic, Leadership
+Materials Research Society                                    Spider Silk Research Presentation with Christopher Viney and the MRS  Professional, Academic, Leadership
+Materials Research Society                                    Study Hall with Hot Cocoa                                             Professional, Academic, Leadership
+Materials Research Society                                    Study for Finals with MRS! (Cocoa & Cram)                             Professional, Academic, Leadership
+Materials Research Society                                    Study for Midterms with: MRS                                          Professional, Academic, Leadership
+Materials Research Society                                    Yosemite Trip                                                         Professional, Academic, Leadership
+Native and Indigenous Student Coalition                       NISC GBM                                                              Social, Leadership, Community Service, Academic, Art, Cultural, Wellness
+Native and Indigenous Student Coalition                       NISC GBM                                                              Social, Leadership, Community Service, Academic, Art, Cultural, Wellness
+Native and Indigenous Student Coalition                       NISC GBM                                                              Social, Leadership, Community Service, Academic, Art, Cultural, Wellness
+Native and Indigenous Student Coalition                       NISC GBM 4                                                            Social, Leadership, Community Service, Academic, Art, Cultural, Wellness
+Native and Indigenous Student Coalition                       NISC General Body Meeting                                             Social, Leadership, Community Service, Academic, Art, Cultural, Wellness
+Native and Indigenous Student Coalition                       NISC General Body Meeting                                             Social, Leadership, Community Service, Academic, Art, Cultural, Wellness
+Paleontology and Life                                         Applegate Zoo Orientation                                             Community Service, Academic, Professional
+Paleontology and Life                                         Bobcat Nature                                                         Community Service, Academic, Professional
+Paleontology and Life                                         Camera Trap Data Processing Workshop                                  Community Service, Academic, Professional
+Paleontology and Life                                         Entomology Workshop                                                   Community Service, Academic, Professional
+Pilipinx American Alliance                                    Barrio Fiesta Tabling                                                 Academic, Cultural, Social
+Pilipinx American Alliance                                    Barrio Fiesta Tabling                                                 Academic, Cultural, Social
+Pilipinx American Alliance                                    Barrio Fiesta Tabling                                                 Academic, Cultural, Social
+Pilipinx American Alliance                                    Choir Practice                                                        Academic, Cultural, Social
+Pilipinx American Alliance                                    Choir Practice                                                        Academic, Cultural, Social
+Pilipinx American Alliance                                    Choir Practice                                                        Academic, Cultural, Social
+Pilipinx American Alliance                                    Choir Practice                                                        Academic, Cultural, Social
+Pilipinx American Alliance                                    Choir Practice                                                        Academic, Cultural, Social
+Pilipinx American Alliance                                    Choir Practice                                                        Academic, Cultural, Social
+Pilipinx American Alliance                                    Cultural Dance Practice                                               Academic, Cultural, Social
+Pilipinx American Alliance                                    Cultural Dance Practice                                               Academic, Cultural, Social
+Pilipinx American Alliance                                    Cultural Dance Practice                                               Academic, Cultural, Social
+Pilipinx American Alliance                                    Cultural Dance Practice                                               Academic, Cultural, Social
+Pilipinx American Alliance                                    Cultural Dance Practice                                               Academic, Cultural, Social
+Pilipinx American Alliance                                    Cultural Dance Practice                                               Academic, Cultural, Social
+Pilipinx American Alliance                                    Cultural Dance Practice                                               Academic, Cultural, Social
+Pilipinx American Alliance                                    Friendship Games                                                      Academic, Cultural, Social
+Pilipinx American Alliance                                    General Meeting                                                       Academic, Cultural, Social
+Pilipinx American Alliance                                    General Meeting                                                       Academic, Cultural, Social
+Pilipinx American Alliance                                    General Meeting                                                       Academic, Cultural, Social
+Pilipinx American Alliance                                    General Meeting                                                       Academic, Cultural, Social
+Pilipinx American Alliance                                    General Meeting                                                       Academic, Cultural, Social
+Pilipinx American Alliance                                    General Meeting                                                       Academic, Cultural, Social
+Pilipinx American Alliance                                    General Meeting                                                       Academic, Cultural, Social
+Psychology Club                                               PSI CHI & Psychology Club Tabling and Fundraiser                      Academic, Undergraduate Student Organization
+Psychology Club                                               PSI CHI & Psychology Club Tabling and Fundraiser                      Academic, Undergraduate Student Organization
+Robotics Society                                              Robotics Society General Meeting                                      Academic, Undergraduate Student Organization, Professional
+Robotics Society                                              Robotics Society General Meeting                                      Academic, Undergraduate Student Organization, Professional
+Robotics Society                                              Robotics Society General Meeting                                      Academic, Undergraduate Student Organization, Professional
+Robotics Society                                              Robotics Society General Meeting                                      Academic, Undergraduate Student Organization, Professional
+Robotics Society                                              Robotics Society General Meeting                                      Academic, Undergraduate Student Organization, Professional
+Sigma Chi                                                     Sigma Chi Agua Fresca Fundraiser                                      Fraternity & Sorority, Leadership, Social, Academic, Community Service, Undergraduate Student Organization
+Society for Industrial and Applied Mathematics                Resume and CV Workshop                                                Graduate Student Organization, Academic, Undergraduate Student Organization, Professional
+Society of Asian Scientists & Engineers                       3D printing workshop                                                  Undergraduate Student Organization, Special Interest, Professional, Leadership, Community Service, Academic, Cultural
+Society of Asian Scientists & Engineers                       BMES X SASE BioE Emphasis                                             Undergraduate Student Organization, Special Interest, Professional, Leadership, Community Service, Academic, Cultural
+Society of Asian Scientists & Engineers                       Learn about the Qingming Festival (Tomb-Sweeping Day)!                Undergraduate Student Organization, Special Interest, Professional, Leadership, Community Service, Academic, Cultural
+Society of Hispanic Professional Engineers                    CRC Collab                                                            Academic, Community Service, Cultural, Leadership, Social, Professional
+Society of Hispanic Professional Engineers                    Cafecito con Pan                                                      Academic, Community Service, Cultural, Leadership, Social, Professional
+Society of Hispanic Professional Engineers                    GM Meeting                                                            Academic, Community Service, Cultural, Leadership, Social, Professional
+Society of Hispanic Professional Engineers                    General Motors x SHPE                                                 Academic, Community Service, Cultural, Leadership, Social, Professional
+Society of Hispanic Professional Engineers                    INTERN-SHPE EXPO                                                      Academic, Community Service, Cultural, Leadership, Social, Professional
+Society of Hispanic Professional Engineers                    Manitos Game Night                                                    Academic, Community Service, Cultural, Leadership, Social, Professional
+Society of Hispanic Professional Engineers                    Manitos Game Night #2                                                 Academic, Community Service, Cultural, Leadership, Social, Professional
+Society of Hispanic Professional Engineers                    Manitos Night                                                         Academic, Community Service, Cultural, Leadership, Social, Professional
+Society of Hispanic Professional Engineers                    MyDegreePath Workshop                                                 Academic, Community Service, Cultural, Leadership, Social, Professional
+Society of Hispanic Professional Engineers                    Pumpkin Carving Night                                                 Academic, Community Service, Cultural, Leadership, Social, Professional
+Society of Hispanic Professional Engineers                    SHPE Movie Night                                                      Academic, Community Service, Cultural, Leadership, Social, Professional
+Society of Hispanic Professional Engineers                    dsm-firmenich x SHPE Collab                                           Academic, Community Service, Cultural, Leadership, Social, Professional
+Society of Physics Students                                   Physics Kahoot Night                                                  Academic, Undergraduate Student Organization, Special Interest, Professional
+Society of Physics Students                                   SPS Guest Speaker Dr Ogunnaike                                        Academic, Undergraduate Student Organization, Special Interest, Professional
+Society of Women Engineers                                    Expanding Your Horizons Conference                                    Professional, Leadership, Social, Academic
+Society of Women Engineers                                    Professional Headshots                                                Professional, Leadership, Social, Academic
+Society of Women Engineers                                    Professional Headshots                                                Professional, Leadership, Social, Academic
+Society of Women Engineers                                    SWE General Body Meeting                                              Professional, Leadership, Social, Academic
+Society of Women Engineers                                    SWE General Body Meeting                                              Professional, Leadership, Social, Academic
+Society of Women Engineers                                    SWE General Body Meeting                                              Professional, Leadership, Social, Academic
+Society of Women Engineers                                    SWE General Meeting                                                   Professional, Leadership, Social, Academic
+Society of Women Engineers                                    SWE Tabling                                                           Professional, Leadership, Social, Academic
+Society of Women Engineers                                    SWE Tabling                                                           Professional, Leadership, Social, Academic
+Society of Women Engineers                                    SWE Tabling                                                           Professional, Leadership, Social, Academic
+Sociology Club                                                Interdisciplinary and Careers of Sociology                            Social, Leadership, Academic, Undergraduate Student Organization, Professional
+Sociology Club                                                Sociology Club Halloween Social                                       Social, Leadership, Academic, Undergraduate Student Organization, Professional
+Sociology Club                                                Sociology Club x CSSA x Psi Chi Mixer                                 Social, Leadership, Academic, Undergraduate Student Organization, Professional
+The Chemistry Society                                         2nd Journal Club with Professor Ryan Baxter                           Academic, Social, Professional, UC Merced Department or Area
+The Chemistry Society                                         Ice Cream & Study                                                     Academic, Social, Professional, UC Merced Department or Area
+Tiny Health Tales                                             Medical Student Panel                                                 Undergraduate Student Organization, Professional, Wellness, Academic, Community Service, Leadership
+Tiny Health Tales                                             Networking After Dark - Haunted Public Health Mixer                   Undergraduate Student Organization, Professional, Wellness, Academic, Community Service, Leadership
+VIDA Volunteer Organization                                   EM Tea Fundraiser                                                     Professional, Undergraduate Student Organization, Academic, Community Service
+VIDA Volunteer Organization                                   Signup and Informational Meeting                                      Professional, Undergraduate Student Organization, Academic, Community Service
+VIDA Volunteer Organization                                   VidaWeek $100 off our registration fee                                Professional, Undergraduate Student Organization, Academic, Community Service
+Women in Science                                              Women Who Lead Science: A Conversation with Prof. Kara McCloskey      Academic, Graduate Student Organization, Leadership, Special Interest
+
+-----------------------------------------
+========== SECTION 2: QUERY 2: ==========
+   last_name      first_name                                                        club_affiliation
+---------------  ------------  --------------------------------------------------------------------------------------------------------------------------
+Asu              Blessing      UC Merced Swim Club
+Asu              Blessing      American Institute of Aeronautics and Astronautics
+Asu              Blessing      Delta Delta Delta
+Asu              Blessing      Korean Student Association
+Asu              Blessing      National Society of Black Engineers
+Asu              Blessing      Trading Card Game Club
+Brar             Kabir         Bangladeshi Student Association
+Brar             Kabir         Native and Indigenous Student Coalition
+Brar             Kabir         UC Merced Swim Club
+Brar             Kabir         Office of Social Justice Initiatives and Identity Programs
+Brar             Kabir         Bobcat Mock Trial
+Brar             Kabir         Game Ain't Based of Sympathy
+Brar             Kabir         Grad Nomads
+Brar             Kabir         Hermanas Unidas
+Brar             Kabir         iSight: Pre-Optometry & Vision
+Brar             Kabir         The Photography Club
+Brar             Kabir         UC Merced Men's Soccer Club
+Brar             Kabir         Youth Advisory Council
+Espiritu         Jerico        Students for Veterans
+Espiritu         Jerico        Alpha Kappa Psi
+Espiritu         Jerico        Sociology Graduate Student Committee
+Espiritu         Jerico        Black Student Union
+Espiritu         Jerico        Delta Delta Delta
+Espiritu         Jerico        Fashion Forward at UC Merced
+Espiritu         Jerico        Hearts for Hope
+Espiritu         Jerico        Theta Tau
+Hawkins-Collins  Dj            College Democrats at UC Merced
+Hawkins-Collins  Dj            The Fusion Club
+Hawkins-Collins  Dj            Dermatology and Health Sciences Association
+Hawkins-Collins  Dj            Investment Club
+Hawkins-Collins  Dj            Rock Band Club
+Hawkins-Collins  Dj            Soulaan Student Society
+Herrera Trejo    Laura         American Medical Student Association
+Herrera Trejo    Laura         African Student Union
+Herrera Trejo    Laura         Anthropology Society
+Herrera Trejo    Laura         Ice Hockey Club at UC Merced
+Herrera Trejo    Laura         Sigma Theta Psi
+Limas            Alexander     AgTech
+Limas            Alexander     UCM Cheer Team
+Limas            Alexander     Asian Pacific American Medical Student Association UC Merced
+Limas            Alexander     Merced Pokémon
+Limas            Alexander     Valley Lung Initiative
+Murillo          Steven        Bobcat Law School Admissions Test Preparation and Studying Club
+Murillo          Steven        Bobcat Bistro
+Murillo          Steven        Rock Band Club
+Murillo          Steven        Asian Pacific American Medical Student Association UC Merced
+Murillo          Steven        Bobcat Band at UC Merced
+Murillo          Steven        Dungeons and Dragons Club
+Murillo          Steven        Game Development Club
+Murillo          Steven        Ice Hockey Club at UC Merced
+Murillo          Steven        Kappa Kappa Gamma
+Murillo          Steven        Mandarin & Cantonese Language Exchange
+Murillo          Steven        Multicultural Medical Alliance
+Murillo          Steven        Stars of Hope
+Murillo          Steven        The Human Help Project at UC Merced
+Murillo          Steven        Tiny Health Tales
+Ngwah            Victoria      Public Health Society
+Ngwah            Victoria      South Asian Student Association
+Ngwah            Victoria      MEDLIFE
+Ngwah            Victoria      Kappa Kappa Gamma
+Ngwah            Victoria      Chinese Cultural Club
+Ngwah            Victoria      The Pawsitive Project, UC Merced's Animal Support Initiative
+Ngwah            Victoria      UCM Archery Club
+Ngwah            Victoria      University Honors Club
+Ramirez          Edith         American Institute of Chemical Engineers at UC Merced
+Ramirez          Edith         Students United for Reproductive and Gender Equity @ UC Merced
+Ramirez          Edith         Delta Gamma
+Ramirez          Edith         Mariachi los Bobcats
+Rubio            Damian        Chess Club
+Rubio            Damian        Sigma Chi
+Rubio            Damian        Delta Gamma
+Rubio            Damian        InterVarsity Christian Fellowship
+Rubio            Damian        Acts2Fellowship
+Rubio            Damian        Bobcats on Broadway
+Rubio            Damian        Ice Cream and Baking Club
+Rubio            Damian        Operation Smile Club
+Rubio            Damian        Undergraduate Research Journal
+Shah             Riyansh       NOBCChE (National Organization for the Professional Advancement of Black Chemists and Chemical Engineers)UC Merced Chapter
+Shah             Riyansh       Trenzas Sin Fronteras
+Shah             Riyansh       AgTech
+Shah             Riyansh       American Society of Mechanical Engineers at UC Merced
+Shah             Riyansh       Bobcat Bistro
+Shah             Riyansh       College Democrats at UC Merced
+Shah             Riyansh       Global Med Collective
+Shah             Riyansh       The Golden Crumb at UC Merced
+Shah             Riyansh       Turning Point USA
+Smith            Noah          Black Student Coalition
+Smith            Noah          African Student Union
+Smith            Noah          Bobcat Bistro
+Smith            Noah          Undergraduate Research Journal
+Sutherland       Neil-Matthew  BobCAD
+Sutherland       Neil-Matthew  The Chemistry Society
+Sutherland       Neil-Matthew  My Little Pony Club
+Sutherland       Neil-Matthew  Psychology Club
+Ward             Valerie       The Historical Society
+Ward             Valerie       Younglife College UC Merced
+Ward             Valerie       Campus Compass
+Ward             Valerie       Cat Court (Moot Court of UC Merced)
+Ward             Valerie       Margo F. Souza Student Leadership Center
+Ward             Valerie       Office of Financial Aid & Scholarships
+Ward             Valerie       Vanguard Engineering Society
+
+-----------------------------------------
+========== SECTION 2: QUERY 3: ==========
+                                  club_name                                                                         event_name                                          date      location    capacity
+-----------------------------------------------------------------------------  ------------------------------------------------------------------------------------  ----------  -----------  --------
+American Medical Student Association                                           AMSA E-Board Meeting                                                                  2026-10-13  COB2 110           53
+American Medical Student Association                                           AMSA E-Board Meeting                                                                  2026-10-27  COB2 110           53
+American Medical Student Association                                           AMSA E-Board Meeting                                                                  2026-11-10  COB2 110           53
+American Medical Student Association                                           AMSA GBM #3                                                                           2026-10-06  COB2 110           53
+American Medical Student Association                                           AMSA GBM #4                                                                           2026-10-20  COB2 110           53
+American Medical Student Association                                           AMSA GBM #5                                                                           2026-11-03  COB2 110           53
+American Society Of Civil Engineers Student Chapter at UC Merced               Dr. Marina Research Info Session                                                      2026-10-14  SSB 160           120
+American Society Of Civil Engineers Student Chapter at UC Merced               Jeopardy Night                                                                        2026-10-07  SSB 160           120
+American Society Of Civil Engineers Student Chapter at UC Merced               Popsicle-Stick Bridge Competition                                                     2026-10-21  SSB 160           120
+American Society Of Civil Engineers Student Chapter at UC Merced               Simpson Gumpertz & Heger Company Visit                                                2026-10-28  SSB 160           120
+American Society Of Civil Engineers Student Chapter at UC Merced               Whiting-Turner Info Session                                                           2026-11-04  SSB 160           120
+Associated Students of UC Merced                                               Meet the Candidates | Fall 2026 Special Elections                                     2026-10-23  COB2 110           53
+Bobcats on Broadway                                                            Macbeth                                                                               2026-10-24  SSB 170           120
+Bobcats on Broadway                                                            Macbeth                                                                               2026-10-25  SSB 170           120
+Campus 2 Community Outreach                                                    Kickoff Event: Celebrating World Health Literacy Month and World Mental Health Month  2026-10-29  COB 288            31
+Campus 2 Community Outreach                                                    Second General Body Meeting                                                           2026-10-13  COB2 265           45
+Chi Alpha: Merced Christian Fellowship                                         Gathering                                                                             2026-10-09  COB 116           120
+Chi Alpha: Merced Christian Fellowship                                         Gathering                                                                             2026-10-16  COB 116           120
+Chi Alpha: Merced Christian Fellowship                                         Gathering                                                                             2026-10-23  COB 116           120
+Chi Alpha: Merced Christian Fellowship                                         Gathering                                                                             2026-10-30  COB 116           120
+Chi Alpha: Merced Christian Fellowship                                         Gathering                                                                             2026-11-06  COB 116           120
+Chi Alpha: Merced Christian Fellowship                                         Gathering                                                                             2026-11-11  COB 116           120
+Chi Alpha: Merced Christian Fellowship                                         Gathering                                                                             2026-11-20  COB 116           120
+Chi Alpha: Merced Christian Fellowship                                         Joint Gathering? MISSEO DEI                                                           2026-11-14  COB 116           120
+Fraternity and Sorority Council                                                FSC Meeting                                                                           2026-10-08  COB2 265           45
+Fraternity and Sorority Council                                                FSC Meeting                                                                           2026-10-15  COB2 265           45
+Fraternity and Sorority Council                                                FSC Meeting                                                                           2026-10-22  COB2 265           45
+Fraternity and Sorority Council                                                FSC Meeting                                                                           2026-10-29  COB2 265           45
+Fraternity and Sorority Council                                                FSC Meeting                                                                           2026-11-05  COB2 265           45
+Hermanas Unidas                                                                Hermanas Unidas Leaf Craft Meeting                                                    2026-10-09  COB 114            53
+Kairos                                                                         Kairoween                                                                             2026-10-24  SSM 116            48
+Kairos                                                                         RUDE! Audition                                                                        2026-10-14  ACS 109            32
+Kairos                                                                         RUDE! Workshop                                                                        2026-10-13  SSM 116            48
+La Familia                                                                     Culinary Night GB Meeting                                                             2026-10-10  SSB 120            92
+La Familia                                                                     Dia de Los Muertos GB Meeting                                                         2026-10-31  SSB 120            92
+La Familia                                                                     La Familia Steering Hunt GB Meeting                                                   2026-10-24  SSB 120            92
+La Familia                                                                     Let's talk about Mental Health! GB Meeting                                            2026-11-07  SSB 120            92
+Merced 4 K-pop                                                                 M4K Halloween Event                                                                   2026-10-28  ACS 109/108        63
+Multicultural Medical Alliance                                                 Oobleck Movie Night Social                                                            2026-10-28  COB1 RM 282        34
+My Little Pony Club                                                            Welcome Meeting                                                                       2026-10-24  SSM 104            60
+National Alliance on Mental Illness                                            NAMI x Folklorico Meeting                                                             2026-10-20  COB1 286           31
+Paleontology and Life                                                          Camera Trap Data Processing Workshop                                                  2026-11-08  COB2 110           53
+Pilipinx American Alliance                                                     Choir Practice                                                                        2026-10-07  ACS 108            63
+Pilipinx American Alliance                                                     Choir Practice                                                                        2026-10-14  ACS 108            63
+Pilipinx American Alliance                                                     Choir Practice                                                                        2026-10-14  ACS 108            63
+Pilipinx American Alliance                                                     Choir Practice                                                                        2026-10-21  ACS 108            63
+Pilipinx American Alliance                                                     Choir Practice                                                                        2026-10-28  ACS 108            63
+Pilipinx American Alliance                                                     Choir Practice                                                                        2026-11-04  ACS 108            63
+Pilipinx American Alliance                                                     Cultural Dance Practice                                                               2026-10-15  SSM 116            48
+Pilipinx American Alliance                                                     Cultural Dance Practice                                                               2026-10-22  SSM 116            48
+Project Rural India Social and Health Improvement                              Project RISHI First General Meeting                                                   2026-10-28  SSB 120            92
+Robotics Society                                                               Robotics Society General Meeting                                                      2026-10-07  COB 1 120         176
+Robotics Society                                                               Robotics Society General Meeting                                                      2026-10-14  COB 1 120         176
+Robotics Society                                                               Robotics Society General Meeting                                                      2026-10-21  COB 1 120         176
+Robotics Society                                                               Robotics Society General Meeting                                                      2026-10-28  COB 1 120         176
+Robotics Society                                                               Robotics Society General Meeting                                                      2026-11-04  COB 1 120         176
+SAE International                                                              Bobcat Racing EV Internship Panel                                                     2026-11-05  SSB 120            92
+SAE International                                                              Bobcat Racing EV Sim Racing Night                                                     2026-10-29  SSB 170           120
+SAE International                                                              SAE International Blooket Night                                                       2026-10-08  SSB 120            92
+SAE International                                                              SAE International Study/Design Session                                                2026-10-15  SSB 120            92
+SAE International                                                              SAE Resume Building                                                                   2026-10-22  SSB 120            92
+Society for Advancement of Chicanos/Hispanics and Native Americans in Science  Halloween Oobleck Collab MMA                                                          2026-10-28  Cob1 282           34
+Society for Advancement of Chicanos/Hispanics and Native Americans in Science  SACNAS General Meeting                                                                2026-10-09  COB 265            45
+Society for Industrial and Applied Mathematics                                 Resume and CV Workshop                                                                2026-10-29  SSB 120            92
+Society of Hispanic Professional Engineers                                     GM Meeting                                                                            2026-10-12  SSB 160           120
+Society of Hispanic Professional Engineers                                     General Motors x SHPE                                                                 2026-10-16  SSB 160           120
+Society of Hispanic Professional Engineers                                     INTERN-SHPE EXPO                                                                      2026-10-09  SSB 160           120
+Society of Hispanic Professional Engineers                                     SHPE Movie Night                                                                      2026-10-30  SSB 160           120
+Society of Hispanic Professional Engineers                                     dsm-firmenich x SHPE Collab                                                           2026-10-23  SSB 160           120
+Sociology Club                                                                 Sociology Club x CSSA x Psi Chi Mixer                                                 2026-10-06  Cob 120           176
+The Phantom Troupe                                                             Anime Jeopardy                                                                        2026-11-04  COB1 114           53
+The Phantom Troupe                                                             Study Night                                                                           2026-10-07  COB114             53
+The Phantom Troupe                                                             Watch Night                                                                           2026-10-08  COB 113            60
+Tiny Health Tales                                                              Medical Student Panel                                                                 2026-10-14  SSB 120            92
+Tiny Health Tales                                                              Networking After Dark - Haunted Public Health Mixer                                   2026-10-30  COB 2 110          53
+Vietnamese Student Association                                                 VSA General Meeting 10/15/26                                                          2026-10-16  SSB 170           120
+Vietnamese Student Association                                                 VSA General Meeting 10/22/26                                                          2026-10-23  SSB 170           120
+Vietnamese Student Association                                                 VSA General Meeting 10/29/26                                                          2026-10-30  SSB 170           120
+Vietnamese Student Association                                                 VSA General Meeting 10/8/26                                                           2026-10-09  SSB 170           120
+Vietnamese Student Association                                                 VSA General Meeting 11/12/26                                                          2026-11-13  SSB 170           120
+Vietnamese Student Association                                                 VSA General Meeting 11/19/26                                                          2026-11-20  SSB 170           120
+Vietnamese Student Association                                                 VSA General Meeting 11/5/26                                                           2026-11-06  SSB 170           120
+Vietnamese Student Association                                                 VSA General Meeting 12/10/26                                                          2026-12-11  SSB 170           120
+Young Artists' Movement                                                        Nerd Nite!                                                                            2026-10-10  SSM 104            60
+Young Artists' Movement                                                        Nerd Nite! p3                                                                         2026-11-07  SSM 104            60
+Younglife College UC Merced                                                    Inspire at UCM                                                                        2026-11-06  COB 2 110          53
