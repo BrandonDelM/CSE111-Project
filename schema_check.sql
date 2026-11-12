@@ -100,3 +100,27 @@ CREATE TABLE memberOf (
     member_type VARCHAR(150) NOT NULL,
     club_affiliation VARCHAR(150)
 );
+
+--Added random faculty to each club
+WITH 
+RandomFaculty AS (
+    SELECT 
+        id,
+        ROW_NUMBER() OVER (ORDER BY RANDOM()) AS rn
+    FROM Faculty
+),
+RandomClubs AS (
+    SELECT 
+        club_name,
+        ROW_NUMBER() OVER (ORDER BY RANDOM()) AS rn
+    FROM Club
+)
+
+INSERT INTO memberOf (id, club_affiliation, member_type)
+SELECT 
+    f.id,
+    c.club_name,
+    'Faculty'
+FROM RandomFaculty AS f
+JOIN RandomClubs AS c
+    ON f.rn = c.rn;

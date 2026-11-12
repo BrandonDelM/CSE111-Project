@@ -20,15 +20,19 @@ PRAGMA foreign_keys = ON;
 
 
 -- ----------------------------------------------------------------------------
--- Statement 10: Counts the members of each club
--- Explanation: Counts the number of members from each club.
+-- Statement 20: List president of each club (mult-table JOIN)
+-- Explanation: List the club, its president and the president's email of each club.
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 1: QUERY 10: Counts the members of each club  ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 20: List president of each club (mult-table JOIN) ==========' AS " ";
 
 SELECT 
-    club_affiliation AS club,
-    COUNT(id) AS num_of_memembers
-FROM memberOf
-GROUP BY club_affiliation
-ORDER BY club_affiliation ASC;
-
+    c.club_name,
+    s.first_name,
+    s.last_name,
+    s.email_name
+FROM Student AS s 
+JOIN memberOf AS mo 
+    ON s.id = mo.id 
+JOIN Club AS c 
+    ON mo.club_affiliation = c.club_name
+WHERE mo.member_type = 'President';
