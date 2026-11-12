@@ -120,40 +120,110 @@ GROUP BY department_name;
 
 
 -- ----------------------------------------------------------------------------
--- Statement 05: 
--- Explanation: 
+-- Statement 05: Tests inserting and deleting a new building
+-- Explanation: Inserts the test building with its id, name, abbreviation. 
+--      Shows building to confirm it was inserted, then deletes test building. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 1: QUERY 5:  ==========' AS " ";
+SELECT '========== SECTION 1: QUERY 5: Tests inserting/deleting a new building ==========' AS " ";
+
+-- inserts test building
+INSERT INTO Building (building_id, building_name, abbreviation)
+VALUES (999, 'TEST BUILDING', 'TEST');
+
+-- prints out club info to confirm club was added
+SELECT *
+FROM Building
+WHERE building_id = 999;
+
+-- deletes test building
+DELETE FROM Building
+WHERE building_id = 999;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 06: 
--- Explanation: 
+-- Statement 06: Inserts new club and updates description
+-- Explanation: Inserts a test club then updates description, shows both before 
+--      and after description to show updated info. Deletes test club afterwards. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 1: QUERY 6:  ==========' AS " ";
+SELECT '========== SECTION 1: QUERY 6: Tests inserting/updating/deleting a club desc  ==========' AS " ";
+
+INSERT INTO Club (club_id, club_name, club_type, club_desc)
+VALUES (999, 'TEST CLUB', 'Test', 'Test club for query');
+
+-- prints out club info to confirm club was added
+SELECT *
+FROM Club
+WHERE club_id = 999;
+
+SELECT 'updated club desc' AS " ";
+
+-- updates club description
+UPDATE Club
+SET club_desc = 'Updated club desc'
+WHERE club_id = 999;
+
+-- prints out club info to confirm club updated
+SELECT *
+FROM Club
+WHERE club_id = 999;
+
+-- deletes test club
+DELETE FROM Club
+WHERE club_id = 999;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 07: 
--- Explanation: 
+-- Statement 07: Chronological orders of events during last week of October 
+-- Explanation: Shows events during the month of October in chronological order
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 1: QUERY 7:  ==========' AS " ";
+SELECT '========== SECTION 1: QUERY 7: Chronological orders of events during last week of October ==========' AS " ";
+
+SELECT 
+    event_name AS Events_in_October,
+    date
+FROM Event
+WHERE date BETWEEN '2026-10-25' AND '2026-10-31'
+ORDER BY date ASC;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 08: 
--- Explanation: 
+-- Statement 08: Fraternity and Sorority filer
+-- Explanation: Lists the name of all the Fraternity and Sorority.
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 1: QUERY 8:  ==========' AS " ";
+SELECT '========== SECTION 1: QUERY 8: Fraternity and Sorority filer ==========' AS " ";
+
+SELECT club_name
+FROM Club
+WHERE club_type LIKE '%Fraternity%' 
+    OR club_type LIKE '%Sorority%';
+
 
 -- ----------------------------------------------------------------------------
--- Statement 09: 
--- Explanation: 
+-- Statement 09: Number of students in major
+-- Explanation: Counts the total number of students for a certain major
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 1: QUERY 9:  ==========' AS " ";
+SELECT '========== SECTION 1: QUERY 9: Number of students in major  ==========' AS " ";
+
+SELECT
+    major,
+    COUNT(id) AS total_students
+FROM Student
+GROUP BY major
+ORDER BY total_students DESC;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 10: 
--- Explanation: 
+-- Statement 10: Counts the members of each club
+-- Explanation: Counts the number of members from each club.
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 1: QUERY 10:  ==========' AS " ";
+SELECT '========== SECTION 1: QUERY 10: Counts the members of each club  ==========' AS " ";
+
+SELECT 
+    club_affiliation AS club,
+    COUNT(id) AS num_of_memembers
+FROM memberOf
+GROUP BY club_affiliation
+ORDER BY club_affiliation ASC;
 
 
 -- ============================================================================
