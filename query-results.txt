@@ -165,23 +165,469 @@ Psychological Sciences                                24
 Public Health                                         14
 Sociology                                             13
 
-------------------------------------------
-========== SECTION 1: QUERY 5:  ==========
+---------------------------------------------------------------------------------
+========== SECTION 1: QUERY 5: Tests inserting/deleting a new building ==========
+building_id  building_name  abbreviation
+-----------  -------------  ------------
+        999  TEST BUILDING  TEST
 
-------------------------------------------
-========== SECTION 1: QUERY 6:  ==========
+----------------------------------------------------------------------------------------
+========== SECTION 1: QUERY 6: Tests inserting/updating/deleting a club desc  ==========
+club_id  club_name  club_type       club_desc
+-------  ---------  ---------  -------------------
+    999  TEST CLUB  Test       Test club for query
 
-------------------------------------------
-========== SECTION 1: QUERY 7:  ==========
+-----------------
+updated club desc
+club_id  club_name  club_type      club_desc
+-------  ---------  ---------  -----------------
+    999  TEST CLUB  Test       Updated club desc
 
-------------------------------------------
-========== SECTION 1: QUERY 8:  ==========
+----------------------------------------------------------------------------------------------------
+========== SECTION 1: QUERY 7: Chronological orders of events during last week of October ==========
+                                           Events_in_October                                                date
+-------------------------------------------------------------------------------------------------------  ----------
+Macbeth                                                                                                  2026-10-25
+Treats N Beats                                                                                           2026-10-25
+We are All Jane Doe Run                                                                                  2026-10-25
+Entomology Workshop                                                                                      2026-10-25
+GM 7# Pawstivity                                                                                         2026-10-26
+UCM Beyblade club meeting                                                                                2026-10-26
+Students for Veterans Tabling-Goodie bag                                                                 2026-10-26
+Students for Veterans Tabling                                                                            2026-10-26
+SPS Guest Speaker Dr Ogunnaike                                                                           2026-10-26
+The Pawsitive Project Tabling                                                                            2026-10-26
+Mangoneada Fundraiser                                                                                    2026-10-26
+Business Society Haunted house Tabling                                                                   2026-10-26
+Bobcat Band Tabling                                                                                      2026-10-26
+CDUCM x Donuts + Democracy                                                                               2026-10-26
+Stars of Hope Little Pumpkins Big Hearts                                                                 2026-10-26
+Little Pumpkins Big Hearts                                                                               2026-10-26
+JOYS Boo Bags Fundraiser                                                                                 2026-10-26
+Tabling for SFA                                                                                          2026-10-26
+AMSA E-Board Meeting                                                                                     2026-10-27
+Bobcat Boxing Club Fundraiser                                                                            2026-10-27
+Henna Tabling Fundraiser                                                                                 2026-10-27
+Cultural Dance Practice                                                                                  2026-10-27
+Delta Sigma Pi Halloween Bake Sale                                                                       2026-10-27
+Student Filmmakers Association General Meeting                                                           2026-10-27
+Business Society Haunted house tabling                                                                   2026-10-27
+Spherification Lab                                                                                       2026-10-27
+Sigma Theta Psi Chapter Meeting                                                                          2026-10-27
+NISC GBM 4                                                                                               2026-10-27
+Halloween Run                                                                                            2026-10-27
+YDSA Tabling                                                                                             2026-10-27
+Concrete Canoe Project Meeting                                                                           2026-10-27
+Lost In Translation                                                                                      2026-10-27
+Wake Up Wednesday                                                                                        2026-10-28
+VSA Lion Dance Practice 10/27/26                                                                         2026-10-28
+Mock Trial Competition Practice                                                                          2026-10-28
+Tuesday Practice                                                                                         2026-10-28
+Choir Practice                                                                                           2026-10-28
+APPATHON DAY 2                                                                                           2026-10-28
+Tabling 10/28                                                                                            2026-10-28
+Merced City Council Forum                                                                                2026-10-28
+Students for Veterans Tabling                                                                            2026-10-28
+Student Alumni Association: Pumpkin Paint & Sip                                                          2026-10-28
+APHA Practice Presentations                                                                              2026-10-28
+Learn about the Qingming Festival (Tomb-Sweeping Day)!                                                   2026-10-28
+Show & Tell and Open Mic                                                                                 2026-10-28
+M4K Halloween Event                                                                                      2026-10-28
+PSI CHI & Psychology Club Tabling and Fundraiser                                                         2026-10-28
+Project RISHI First General Meeting                                                                      2026-10-28
+Oobleck Movie Night Social                                                                               2026-10-28
+Spooky Sips!                                                                                             2026-10-28
+Simpson Gumpertz & Heger Company Visit                                                                   2026-10-28
+Robotics Society General Meeting                                                                         2026-10-28
+Halloween Rock Fest                                                                                      2026-10-28
+ASME x Mathworks                                                                                         2026-10-28
+Pie an Eboard Fundraiser                                                                                 2026-10-28
+SWE General Body Meeting                                                                                 2026-10-28
+Pie A Penguina Fundraiser                                                                                2026-10-28
+Halloween Oobleck Collab MMA                                                                             2026-10-28
+Fall into Leadership Open House                                                                          2026-10-28
+Healthy Halloween Tabling                                                                                2026-10-28
+Estudio Biblico                                                                                          2026-10-29
+General Mock Trial Meeting                                                                               2026-10-29
+Cultural Dance Practice                                                                                  2026-10-29
+Bobcat Racing EV Sim Racing Night                                                                        2026-10-29
+PSI CHI & Psychology Club Tabling and Fundraiser                                                         2026-10-29
+Know Your Rights + Resources                                                                             2026-10-29
+Kickoff Event: Celebrating World Health Literacy Month and World Mental Health Month                     2026-10-29
+YDSA Tabling                                                                                             2026-10-29
+Resume and CV Workshop                                                                                   2026-10-29
+Button-Up Fundraiser                                                                                     2026-10-29
+make your own Pokémon themed fidget clicker                                                              2026-10-29
+Goodie Bag Fundraiser                                                                                    2026-10-29
+Steel-Bridge Project Meeting                                                                             2026-10-29
+GC Spooky Charcuterie Board Workshop                                                                     2026-10-29
+My Black Job, is to Use My Black Vote.                                                                   2026-10-29
+Saints & Bible Study                                                                                     2026-10-29
+Sister's Cookie Decorating Social                                                                        2026-10-29
+HHP GBM                                                                                                  2026-10-29
+AO Tabling                                                                                               2026-10-29
+Sociology Club Halloween Social                                                                          2026-10-29
+FSC Meeting                                                                                              2026-10-29
+Econ Club Current Events Discussion                                                                      2026-10-29
+Brother's Social                                                                                         2026-10-29
+Professional Headshots                                                                                   2026-10-29
+Professional Headshots                                                                                   2026-10-29
+Gathering                                                                                                2026-10-30
+VSA General Meeting 10/29/26                                                                             2026-10-30
+General Reading Club Meeting                                                                             2026-10-30
+Mock Trial Competition Practice                                                                          2026-10-30
+General Meeting                                                                                          2026-10-30
+FIOP Biweekly Meeting                                                                                    2026-10-30
+FIOP Bi-Weekly Meeting                                                                                   2026-10-30
+Jummah Prayer                                                                                            2026-10-30
+Tabling at UCM Horror club event                                                                         2026-10-30
+Students for Veterans Tabling                                                                            2026-10-30
+Tabling                                                                                                  2026-10-30
+Horror festival                                                                                          2026-10-30
+GMC- Meet a Doctor                                                                                       2026-10-30
+Early Childhood Education Healthy Pumpkins                                                               2026-10-30
+PVC Spooky Fundraiser                                                                                    2026-10-30
+Timber-Strong Project Meeting                                                                            2026-10-30
+Study Hours                                                                                              2026-10-30
+JOYS Vision Board Making — General Body Meeting! ???                                                     2026-10-30
+Networking After Dark - Haunted Public Health Mixer                                                      2026-10-30
+JOYS Vision Board Making — General Body Meeting! ???                                                     2026-10-30
+SHPE Movie Night                                                                                         2026-10-30
+DHOP - Tabling                                                                                           2026-10-30
+Ballot Party Night (In collaboration with UCM Lobby Corps, Students For Veterans, and UCM Middleground)  2026-10-30
+2nd Journal Club with Professor Ryan Baxter                                                              2026-10-30
+DHOP Tabling                                                                                             2026-10-30
+October Tabling                                                                                          2026-10-30
+BCB General Body Meeting                                                                                 2026-10-30
+Prayer Night                                                                                             2026-10-31
+VSA Lion Dance Practice 10/30/26                                                                         2026-10-31
+EBM #6 Pawstivity                                                                                        2026-10-31
+Spider Silk Research Presentation with Christopher Viney and the MRS                                     2026-10-31
+Bobcat Magica Meeting                                                                                    2026-10-31
+Creative Writing Club - General Meeting                                                                  2026-10-31
+Halloween Movie Night                                                                                    2026-10-31
+General Meeting                                                                                          2026-10-31
+Merced Cyber - Cyber Collegiate Defense Competition Invitationals #2                                     2026-10-31
+Dia de Los Muertos GB Meeting                                                                            2026-10-31
 
-------------------------------------------
-========== SECTION 1: QUERY 9:  ==========
+-----------------------------------------------------------------------
+========== SECTION 1: QUERY 8: Fraternity and Sorority filer ==========
+               club_name
+----------------------------------------
+Alpha Kappa Psi
+Delta Delta Delta
+Delta Epsilon Mu
+Delta Gamma
+Delta Sigma Pi
+Delta Sigma Theta Sorority, Incorporated
+Fraternity and Sorority Council
+Fraternity and Sorority Life
+Kappa Alpha Psi Fraternity, Inc.
+Kappa Delta Chi
+Kappa Kappa Gamma
+Phi Mu
+Pi Kappa Phi
+Professional Fraternity Council
+Sigma Chi
+Sigma Theta Psi
+Theta Tau
 
--------------------------------------------
-========== SECTION 1: QUERY 10:  ==========
+----------------------------------------------------------------------
+========== SECTION 1: QUERY 9: Number of students in major  ==========
+                         major                            total_students
+--------------------------------------------------------  --------------
+Communication and Media                                               16
+Liberal Studies                                                       14
+Chicanx Studies                                                       14
+Mechanical Engineering                                                12
+Management of Innovation, Sustainability, and Technology              12
+Electrical Engineering                                                12
+Biochemical and Biomolecular Engineering                              12
+Psychology                                                            11
+Literatures in English                                                11
+Computer Science                                                      11
+Cognitive Science                                                     11
+Chemistry                                                             11
+Artificial Intelligence                                               11
+American Studies                                                      11
+Spanish                                                               10
+Public Health                                                         10
+Political Science                                                     10
+Natural Sciences Education                                            10
+Community Research and Service                                        10
+Biological Sciences                                                   10
+Bioengineering                                                        10
+Sociology                                                              9
+Science, Technology, and Ethics                                        9
+Management and Business Economics                                      9
+Environmental Humanities                                               9
+Ecology, Evolution, and Conservation Biology                           9
+Materials Science and Engineering                                      8
+Management Analytics and Decision-Making                               8
+Critical Race and Ethnic Studies                                       8
+Anthropology                                                           8
+Neuroscience                                                           7
+History                                                                7
+Global Arts Studies                                                    7
+Geospatial Technology                                                  7
+Environmental Engineering                                              7
+Economics                                                              7
+Chemical Engineering                                                   7
+Biochemistry                                                           7
+Applied Mathematical Sciences                                          7
+Aerospace Engineering                                                  7
+Writing Studies                                                        6
+Physics                                                                6
+Environmental Systems Science                                          6
+Data Science and Computing                                             6
+Civil Engineering                                                      6
+Philosophy                                                             5
+Data Science and Analytics                                             5
+Computer Science and Engineering                                       3
+Business Administration                                                3
+
+---------------------------------------------------------------------------
+========== SECTION 1: QUERY 10: Counts the members of each club  ==========
+                                                           club                                                             num_of_memembers
+--------------------------------------------------------------------------------------------------------------------------  ----------------
+180 Degrees Consulting                                                                                                                    15
+Acts2Fellowship                                                                                                                           17
+Actuarial Science Club                                                                                                                    14
+African Student Union                                                                                                                     13
+AgTech                                                                                                                                    14
+Agricultural Insects & Plants                                                                                                             12
+Alpha Kappa Psi                                                                                                                           14
+Alpha Omega Campus Ministry                                                                                                               10
+American Institute of Aeronautics and Astronautics                                                                                        10
+American Institute of Chemical Engineers at UC Merced                                                                                     13
+American Medical Student Association                                                                                                      16
+American Red Cross Club                                                                                                                    8
+American Society Of Civil Engineers Student Chapter at UC Merced                                                                          16
+American Society of Biochemistry and Molecular Biology                                                                                    14
+American Society of Mechanical Engineers at UC Merced                                                                                     14
+Anthropology Society                                                                                                                      11
+Asian American Association                                                                                                                10
+Asian Pacific American Medical Student Association UC Merced                                                                              12
+Associated Students of UC Merced                                                                                                           7
+Association for Computing Machinery                                                                                                        6
+Astronomy Club                                                                                                                            15
+Ballet Folklórico                                                                                                                         10
+Bangladeshi Student Association                                                                                                           12
+Battery Workforce Challenge                                                                                                               10
+Bhagat Puran Singh Health Initiative                                                                                                      12
+Biophysics Graduate Club                                                                                                                  14
+Bird Seekers and Ornithological Naturalist Group                                                                                          15
+Black Student Coalition                                                                                                                    9
+Black Student Union                                                                                                                       13
+BobCAD                                                                                                                                    11
+BobCat Wind Club                                                                                                                          11
+Bobcat Band at UC Merced                                                                                                                  16
+Bobcat Bistro                                                                                                                             13
+Bobcat Boxing Club                                                                                                                        14
+Bobcat Community Builders                                                                                                                 10
+Bobcat Law School Admissions Test Preparation and Studying Club                                                                           16
+Bobcat Magica                                                                                                                             12
+Bobcat Mock Trial                                                                                                                         11
+Bobcat Model United Nations                                                                                                               13
+Bobcat Runnings Run Club                                                                                                                  13
+Bobcats on Broadway                                                                                                                       12
+Campus 2 Community Outreach                                                                                                                5
+Campus Activities Board                                                                                                                   11
+Campus Advocacy, Resources and Education                                                                                                   8
+Campus Compass                                                                                                                            14
+Cat Court (Moot Court of UC Merced)                                                                                                        8
+Catholic Newman Club                                                                                                                      13
+Chemists Who Care                                                                                                                         15
+Chess Club                                                                                                                                12
+Chi Alpha: Merced Christian Fellowship                                                                                                    11
+Chinese Cultural Club                                                                                                                     13
+Choir Club                                                                                                                                13
+Cognitive Science Student Association                                                                                                      9
+College Democrats at UC Merced                                                                                                            17
+Community Campus Garden                                                                                                                    7
+Community Engagement Center                                                                                                               14
+Cosplay-Cats at UC Merced                                                                                                                 13
+Crochet Club                                                                                                                              10
+Data Science Society                                                                                                                      12
+Delta Delta Delta                                                                                                                         13
+Delta Epsilon Mu                                                                                                                           8
+Delta Gamma                                                                                                                               19
+Delta Sigma Pi                                                                                                                            12
+Delta Sigma Theta Sorority, Incorporated                                                                                                  14
+Dermatology and Health Sciences Association                                                                                               12
+Diva Stride Run Club                                                                                                                      14
+Diversified Doctors                                                                                                                       11
+Dungeons and Dragons Club                                                                                                                 16
+East African Student Association                                                                                                          10
+Economics Club                                                                                                                             8
+El Club de Español                                                                                                                        13
+Experiential Learning                                                                                                                     13
+Fashion Forward at UC Merced                                                                                                              20
+Financial Wellness Center                                                                                                                 15
+First Generation Collective                                                                                                                9
+Fraternity and Sorority Council                                                                                                           10
+Fraternity and Sorority Life                                                                                                              11
+Future Industrial Organizational Psychologists                                                                                            15
+Game Ain't Based of Sympathy                                                                                                               9
+Game Development Club                                                                                                                     15
+Global Med Collective                                                                                                                     19
+Google Developer Group on Campus: UC Merced                                                                                                8
+Grad Nomads                                                                                                                               13
+Graduate Pedagogy Association                                                                                                              9
+Ground State                                                                                                                              10
+HackMerced                                                                                                                                18
+Health Promotion                                                                                                                          14
+Healthy Food Association                                                                                                                  10
+Hearts for Hope                                                                                                                           18
+Hermanas Unidas                                                                                                                           19
+Hmong Student Association                                                                                                                 20
+Homebound Dance Team                                                                                                                      13
+Horror Club                                                                                                                               10
+Ice Cream and Baking Club                                                                                                                 10
+Ice Hockey Club at UC Merced                                                                                                              13
+Ignition Automotive Club                                                                                                                  14
+Immigrant ROOTS - Rising Organizers for Opportunity, Transformation, and Solidarity                                                       15
+Institute of Electrical and Electronics Engineers                                                                                         12
+InterVarsity Christian Fellowship                                                                                                         12
+Investment Club                                                                                                                           12
+JOYS                                                                                                                                      12
+Kairos                                                                                                                                    14
+Kappa Alpha Psi Fraternity, Inc.                                                                                                          13
+Kappa Delta Chi                                                                                                                           18
+Kappa Kappa Gamma                                                                                                                         16
+Korean Student Association                                                                                                                10
+La Familia                                                                                                                                10
+Lambda Alliance                                                                                                                            9
+MEDLIFE                                                                                                                                   12
+Mandarin & Cantonese Language Exchange                                                                                                    12
+Margo F. Souza Student Leadership Center                                                                                                  13
+Mariachi los Bobcats                                                                                                                       9
+Martial Arts Club                                                                                                                         16
+Materials Research Society                                                                                                                 8
+Math Club at UC Merced                                                                                                                    15
+Merced 4 K-pop                                                                                                                            14
+Merced Badminton Club                                                                                                                     12
+Merced Cybersecurity                                                                                                                       7
+Merced Indian Graduate Student Association                                                                                                12
+Merced Pokémon                                                                                                                             8
+Merced Pre-Law Society                                                                                                                    13
+Mi3 Student Association                                                                                                                   10
+Middle Ground                                                                                                                              7
+Minecraft Club at UC Merced                                                                                                               11
+Mission:BRAIN Chapter at UC Merced                                                                                                        15
+Model Shipbuilding Club                                                                                                                   11
+Movimiento Estudiantil Chicano de Aztlán                                                                                                  13
+Multicultural Medical Alliance                                                                                                            15
+Muslim Students Association                                                                                                               17
+My Little Pony Club                                                                                                                       14
+NOBCChE (National Organization for the Professional Advancement of Black Chemists and Chemical Engineers)UC Merced Chapter                17
+National Alliance on Mental Illness                                                                                                        9
+National Society of Black Engineers                                                                                                       13
+Native and Indigenous Student Coalition                                                                                                    8
+Nigerian Student Association                                                                                                              12
+Nikkei Student Union                                                                                                                      25
+Nintendo Wii Club                                                                                                                         16
+Off Duty Wellness                                                                                                                         10
+Office of Financial Aid & Scholarships                                                                                                    18
+Office of Social Justice Initiatives and Identity Programs                                                                                18
+Office of Student Involvement                                                                                                             13
+Office of Student Rights and Responsibilities                                                                                             13
+Office of the Ombuds                                                                                                                       9
+Operation Smile Club                                                                                                                      17
+PERIOD. at UC Merced                                                                                                                      10
+Paleontology and Life                                                                                                                     12
+Panjabi Students' Union                                                                                                                   14
+Phi Mu                                                                                                                                     9
+Pi Kappa Phi                                                                                                                              10
+Pilipinx American Alliance                                                                                                                12
+Pre-Veterinary Club                                                                                                                       16
+Professional Fraternity Council                                                                                                           10
+Project Rural India Social and Health Improvement                                                                                         13
+Project Smile: Pre-Dental Society                                                                                                         13
+Project Women  and Youth                                                                                                                  11
+Psi Chi: The International Honor Society in Psychology                                                                                    13
+Psychology Club                                                                                                                            9
+Public Health Graduate Student Group                                                                                                      16
+Public Health Society                                                                                                                     17
+RadioBio                                                                                                                                  21
+Raunak Merced Di                                                                                                                          11
+Research and Development                                                                                                                  12
+Robotics Society                                                                                                                          11
+Rock Band Club                                                                                                                            15
+Rotaract Club                                                                                                                             10
+SAE International                                                                                                                         14
+Sigma Chi                                                                                                                                 13
+Sigma Delta Pi                                                                                                                            11
+Sigma Theta Psi                                                                                                                           11
+Sikh Student Association                                                                                                                  14
+SnowCats                                                                                                                                  10
+Social Creatives Club                                                                                                                     10
+Society for Advancement of Chicanos/Hispanics and Native Americans in Science                                                             13
+Society for Industrial and Applied Mathematics                                                                                            11
+Society of Asian Scientists & Engineers                                                                                                    8
+Society of Hispanic Professional Engineers                                                                                                12
+Society of Physics Students                                                                                                               14
+Society of Women Engineers                                                                                                                14
+Sociology Club                                                                                                                            15
+Sociology Graduate Student Committee                                                                                                       9
+Soulaan Student Society                                                                                                                   14
+South Asian Student Association                                                                                                           12
+Stars of Hope                                                                                                                             10
+Student Alumni Association                                                                                                                12
+Student Filmmakers Association                                                                                                            12
+Students United for Reproductive and Gender Equity @ UC Merced                                                                            10
+Students for Justice in Palestine                                                                                                          9
+Students for Veterans                                                                                                                     12
+Super Smash Brother's Club                                                                                                                11
+The Basketball Club                                                                                                                       18
+The Biomedical Engineering Society                                                                                                        12
+The Business Society                                                                                                                      14
+The Chemistry Society                                                                                                                     10
+The Creative Writing, Literature, and Poetry Club                                                                                         14
+The Fusion Club                                                                                                                           11
+The Golden Crumb at UC Merced                                                                                                             12
+The Historical Society                                                                                                                    10
+The Human Help Project at UC Merced                                                                                                       10
+The National Society of Leadership and Success at UC Merced                                                                               15
+The Pawsitive Project, UC Merced's Animal Support Initiative                                                                              11
+The Phantom Troupe                                                                                                                        18
+The Photography Club                                                                                                                      13
+The Prestige                                                                                                                              13
+The Reading Club                                                                                                                          13
+The Vernal Pool                                                                                                                           12
+The Whimsical Workshop: Crafting Club                                                                                                     13
+Theta Tau                                                                                                                                 19
+Tiny Health Tales                                                                                                                         11
+Trading Card Game Club                                                                                                                    12
+Transfer, Returning, Veteran Student Services                                                                                             12
+Trenzas Sin Fronteras                                                                                                                     12
+Turning Point USA                                                                                                                         14
+UC Merced Extension                                                                                                                       12
+UC Merced Men's Soccer Club                                                                                                               20
+UC Merced Swim Club                                                                                                                        9
+UCM Archery Club                                                                                                                          13
+UCM Beyblade club                                                                                                                         10
+UCM Cheer Team                                                                                                                            11
+UCM Dance Team                                                                                                                            11
+UCM Ritmo Latino                                                                                                                           9
+UCM Softball Club                                                                                                                         11
+UCM Tennis Club                                                                                                                           11
+Undergraduate Research Journal                                                                                                            15
+University Honors Club                                                                                                                     8
+VIDA Volunteer Organization                                                                                                               13
+Valley Lung Initiative                                                                                                                    13
+Vanguard Engineering Society                                                                                                              12
+Vietnamese Student Association                                                                                                            14
+Visioneers                                                                                                                                11
+Women in Science                                                                                                                          16
+Yamabuki Taiko                                                                                                                             8
+Yosemite Leadership Program                                                                                                               11
+Young Artists' Movement                                                                                                                    6
+Young Democratic Socialists of America                                                                                                    11
+Younglife College UC Merced                                                                                                               16
+Youth Advisory Council                                                                                                                    15
+Zen Garden Community Building Club                                                                                                         9
+iSight: Pre-Optometry & Vision                                                                                                            17
 
 -----------------------------------------
 ========== SECTION 2: QUERY 1: ==========
