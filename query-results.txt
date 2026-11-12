@@ -1,6 +1,6 @@
 
--------------------------------------------------------------
-========== SECTION 1: QUERY 1: First year students ==========
+-----------------------------------------------------------------
+========== SECTION 1: QUERY 1: All First year students ==========
   first_name              last_name               year                             major
 --------------  ------------------------------  --------  --------------------------------------------------------
 Sheizan         Bawa                            1st Year  Artificial Intelligence
@@ -126,50 +126,47 @@ Hui         Cai         hcai6@ucmerced.edu
 David       Strubbe     dstrubbe@ucmerced.edu
 Jing        Xu          jxu8@ucmerced.edu
 
-------------------------------------------------------------------
-========== SECTION 1: QUERY 3: All students in database ==========
-  year    COUNT(*)
---------  --------
-1st Year       103
-2nd Year       107
-3rd Year       108
-4th Year       114
+----------------------------------------------------------------
+========== SECTION 1: QUERY 3: Total students by year ==========
+  year    total_students
+--------  --------------
+1st Year             103
+2nd Year             107
+3rd Year             108
+4th Year             114
 
--------------------------------------------------------------------------
-========== SECTION 1: QUERY 4: All faculty members in database ==========
-             department_name               COUNT(*)
------------------------------------------  --------
-Anthropology & Heritage Studies                   9
-Applied Mathematics                              20
-Bioengineering                                    9
-Chemical & Materials Engineering                 11
-Chemistry & Biochemistry                         13
-Civil & Environmental Engineering                18
-Cognitive and Information Sciences                9
-Computer Science & Engineering                   19
-Economics and Business Management                10
-Electrical Engineering                            7
-Global Arts, Media and Writing Studies           17
-History, Critical Race and Ethnic Studies        13
-Life & Environmental Sciences                    16
-Literatures, Languages, and Cultures             13
-Mail and Doc Svs                                  1
-Management of Complex Systems                    11
-Mechanical and Aerospace Engineering             18
-Medical Education                                 1
-Molecular Cell Biology                           18
-Philosophy                                        1
-Physics                                          14
-Political Science                                 9
-Psychological Sciences                           24
-Public Health                                    14
-Sociology                                        13
+----------------------------------------------------------------------
+========== SECTION 1: QUERY 4: Total faculty by department  ==========
+             department_name               total_faculty
+-----------------------------------------  -------------
+Anthropology & Heritage Studies                        9
+Applied Mathematics                                   20
+Bioengineering                                         9
+Chemical & Materials Engineering                      11
+Chemistry & Biochemistry                              13
+Civil & Environmental Engineering                     18
+Cognitive and Information Sciences                     9
+Computer Science & Engineering                        19
+Economics and Business Management                     10
+Electrical Engineering                                 7
+Global Arts, Media and Writing Studies                17
+History, Critical Race and Ethnic Studies             13
+Life & Environmental Sciences                         16
+Literatures, Languages, and Cultures                  13
+Mail and Doc Svs                                       1
+Management of Complex Systems                         11
+Mechanical and Aerospace Engineering                  18
+Medical Education                                      1
+Molecular Cell Biology                                18
+Philosophy                                             1
+Physics                                               14
+Political Science                                      9
+Psychological Sciences                                24
+Public Health                                         14
+Sociology                                             13
 
 -----------------------------------------
 ========== SECTION 2: QUERY 1: ==========
-' '
----
-
                          club_name                                                         event_name                                                                                     club_type
 ------------------------------------------------------------  --------------------------------------------------------------------  ---------------------------------------------------------------------------------------------------------------------
 Actuarial Science Club                                        1st General Meeting                                                   Professional, Academic
