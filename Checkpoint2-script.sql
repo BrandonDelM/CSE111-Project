@@ -25,39 +25,39 @@
 -- ============================================================================
 -- SECTION 1: SIMPLE STATEMENTS
 -- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 02: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 03: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 04: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 05: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 06: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 07: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 08: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 9: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 10: Brandon Del Mundo: 50%, Christine Uy: 50%
 
 --SECTION 2: INTERMEDIATE STATEMENTS
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 11: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 12: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 13: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 14: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 15: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 16: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 17: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 18: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 19: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 20: Brandon Del Mundo: 50%, Christine Uy: 50%
 
 -- SECTION 3: COMPLEX STATEMENTS
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 01: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 21: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 22: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 23: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 24: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 25: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 26: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 27: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 28: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 29: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 30: Brandon Del Mundo: 50%, Christine Uy: 50%
 -- ============================================================================
 
 -- Ensure SQLite foreign key constraints are enforced
@@ -231,22 +231,22 @@ ORDER BY club_affiliation ASC;
 -- ============================================================================
 
 -- ----------------------------------------------------------------------------
--- Statement 01: 
--- Explanation: 
+-- Statement 11: Academic clubs and events (2-Table Inner Join)
+-- Explanation: Shows all clubs that have club type of academic and their events. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 2: QUERY 1: ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 11: Academic clubs and events ==========' AS " ";
 
 SELECT e.club_name, e.event_name, c.club_type
-FROM Club c, Event e
-WHERE club_type LIKE '%Academic%'
-AND e.club_name = c.club_name;
+FROM Club c
+JOIN Event e ON e.club_name = c.club_name
+WHERE club_type LIKE '%Academic%';
 
 
 -- ----------------------------------------------------------------------------
--- Statement 02: 
--- Explanation: 
+-- Statement 12: Computer Science majors and their clubs (2-Table Inner Join)
+-- Explanation: Lists the clubs of students who are computer science majors.
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 2: QUERY 2: ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 12: Computer Science majors and their clubs ==========' AS " ";
 
 SELECT last_name, first_name, club_affiliation
 FROM Student s, memberOf mo
@@ -256,10 +256,11 @@ ORDER BY 1, 2;
 
 
 -- ----------------------------------------------------------------------------
--- Statement 03: 
--- Explanation: 
+-- Statement 13: Events in rooms with capacity over 30 (Multi-Table Join)
+-- Explanation: Lists the events taken place in rooms that have a room 
+--      capacity over 30 people. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 2: QUERY 3: ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 13: Events in rooms with capacity over 30 ==========' AS " ";
 
 SELECT club_name, event_name, date, location, capacity
 FROM event e, building b, room r
@@ -271,107 +272,213 @@ ORDER BY 1, 2, 3;
 
 
 -- ----------------------------------------------------------------------------
--- Statement 04: 
--- Explanation:  
+-- Statement 14: Clubs with no events (2-table Left Outer Join)
+-- Explanation: Lists clubs that have not had any events. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 2: QUERY 4:  ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 14: Clubs with no events (2-table Left Outer Join) ==========' AS " ";
+
+SELECT c.club_name, c.club_type
+FROM Club As c
+LEFT JOIN Event AS e 
+    ON c.club_name = e.club_name
+WHERE e.event_id IS NULL
+ORDER BY c.club_name;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 05: 
--- Explanation: 
+-- Statement 15: Counts event attendance
+-- Explanation: Counts the number of attendees for each event and lists the 
+--      event name and its club. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 2: QUERY 5:  ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 15:  Counts event attendance ==========' AS " ";
+
+SELECT 
+    c.club_name,
+    e.event_name,
+    COUNT(ea.attendee_id) AS total_attendees
+FROM Event AS e 
+LEFT JOIN EventAttendance AS ea 
+    ON e.event_id = ea.event_id
+LEFT JOIN Club AS c
+    ON e.club_name = c.club_name
+GROUP BY e.event_id, e.event_name 
+ORDER BY total_attendees DESC;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 06: 
--- Explanation: 
+-- Statement 16: List students who are in multiple clubs
+-- Explanation: Finds students who are in more than 1 club and orders them in 
+--      descending order of amount of clubs. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 2: QUERY 6:  ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 16: List students who are in multiple clubs (GROUP BY & HAVING) ==========' AS " ";
+
+SELECT 
+    s.first_name,
+    s.last_name,
+    COUNT(mo.club_affiliation) AS num_clubs
+FROM Student AS s 
+JOIN memberOf AS mo 
+    ON s.id = mo.id
+GROUP BY s.id
+HAVING COUNT(mo.club_affiliation) > 1
+ORDER BY num_clubs DESC;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 07: 
--- Explanation: 
+-- Statement 17: Clubs that host popular events (Scalar Subquery)
+-- Explanation: Finds the clubs that host events with attendence above 
+--      the adverage attendance across all events. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 2: QUERY 7:  ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 17: Clubs that host popular events (Scalar Subquery)  ==========' AS " ";
+
+SELECT 
+    e.club_name,
+    e.event_name,
+    COUNT(ea.attendee_id) AS num_attendees
+FROM Event AS e 
+JOIN EventAttendance AS ea 
+    ON e.event_id = ea.event_id 
+GROUP BY e.event_id, e.club_name, e.event_name
+HAVING COUNT(ea.attendee_id) > (
+    -- finds avg attendance
+    SELECT AVG(total_attendees)
+    FROM (
+        --calc total attendance
+        SELECT 
+            event_id,
+            COUNT(*) As total_attendees
+        FROM EventAttendance
+        GROUP BY event_id
+        )
+    )
+ORDER BY num_attendees DESC;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 08: 
--- Explanation: 
+-- Statement 18: Faculity in no clubs (Subquery NOT IN)
+-- Explanation: Lists the Faculity who are not in any clubs. Every club must
+--      have one faculity member and a faculity member can only oversee one club.
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 2: QUERY 8:  ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 18: Faculity in no clubs  ==========' AS " ";
+
+SELECT 
+   first_name,
+   last_name,
+   email_name
+FROM Faculty AS f
+WHERE f.id NOT IN (
+    SELECT m.id
+    FROM memberOf AS m
+);
+
 
 -- ----------------------------------------------------------------------------
--- Statement 09: 
--- Explanation: 
+-- Statement 19: Events on the same day (Subquery & HAVING)
+-- Explanation: Shows event that are taking place on the same day and lists the
+--      event's details and club hosting them. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 2: QUERY 9:  ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 19: Statement 19: Events on the same day (Subquery & HAVING) ==========' AS " ";
+
+SELECT
+    e.event_name,
+    e.date,
+    e.start_time,
+    e.end_time,
+    c.club_name
+FROM Event AS e
+JOIN Club AS c 
+    ON e.club_name = c.club_name
+WHERE e.date IN (
+
+    --query that shows only events that share the same day
+    SELECT date
+    FROM Event
+    GROUP BY date
+    HAVING COUNT(*) > 1
+)
+ORDER BY e.date ASC, e.start_time ASC, e.end_time ASC;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 10: 
--- Explanation: 
+-- Statement 20: List president of each club (mult-table JOIN)
+-- Explanation: List the club, its president and the president's email of each club.
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 2: QUERY 10:  ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 20: List president of each club (mult-table JOIN) ==========' AS " ";
+
+SELECT 
+    c.club_name,
+    s.first_name,
+    s.last_name,
+    s.email_name
+FROM Student AS s 
+JOIN memberOf AS mo 
+    ON s.id = mo.id 
+JOIN Club AS c 
+    ON mo.club_affiliation = c.club_name
+WHERE mo.member_type = 'President';
+
+
 
 -- ============================================================================
--- SECTION 3: COMPLEX STATEMENTS (Statements 22 to 32)
+-- SECTION 3: COMPLEX STATEMENTS (Statements 21 to 30)
 -- ============================================================================
 
 -- ----------------------------------------------------------------------------
--- Statement 01: 
+-- Statement 21: 
 -- Explanation: 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 1:  ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 21:  ==========' AS " ";
 
 -- ----------------------------------------------------------------------------
--- Statement 02: 
+-- Statement 22: 
 -- Explanation: 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 2:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 22:  ==========' AS " ";
 
 -- ----------------------------------------------------------------------------
--- Statement 03:
+-- Statement 23: 
 -- Explanation: 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 3:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 23:  ==========' AS " ";
 
 -- ----------------------------------------------------------------------------
--- Statement 04: 
+-- Statement 24: 
 -- Explanation:  
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 4:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 24:  ==========' AS " ";
 
 -- ----------------------------------------------------------------------------
--- Statement 05: 
+-- Statement 25: 
 -- Explanation: 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 5:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 25:  ==========' AS " ";
 
 -- ----------------------------------------------------------------------------
--- Statement 06: 
+-- Statement 26: 
 -- Explanation: 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 6:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 26:  ==========' AS " ";
 
 -- ----------------------------------------------------------------------------
--- Statement 07: 
+-- Statement 27: 
 -- Explanation: 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 7:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 27:  ==========' AS " ";
 
 -- ----------------------------------------------------------------------------
--- Statement 08: 
+-- Statement 28: 
 -- Explanation: 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 8:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 28:  ==========' AS " ";
 
 -- ----------------------------------------------------------------------------
--- Statement 09: 
+-- Statement 29: 
 -- Explanation: 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 9:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 29:  ==========' AS " ";
 
 -- ----------------------------------------------------------------------------
--- Statement 10: 
+-- Statement 30: 
 -- Explanation: 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 10:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 30:  ==========' AS " ";
