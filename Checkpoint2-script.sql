@@ -498,7 +498,7 @@ GROUP BY c.club_name;
 
 -- shows view results
 SELECT *
-FROM ClubEventCounts
+FROM View_ClubEventCounts
 ORDER BY total_events DESC;
 
 
