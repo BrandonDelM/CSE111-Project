@@ -15,8 +15,16 @@
 -- explicitly state: "No modifications made to the Checkpoint 1 schema."
 --
 -- Modifications:
--- 1. [Description of schema modification 1, or None]
--- 2. [Description of schema modification 2]
+-- 1. Event table: Added VARCHAR(150) to location, date, start_time, and end_time
+-- 2. Room table: Changed room_number to VARCHAR(150)
+-- 3. Student Table: Removed Foreign keys
+-- 4. Faculty table: Added VARCHAR(150) to department_name, school_name, and club_affiliation
+--       AND Removed foreign keys
+-- 5. EventAttendance table: Added VARCHAR(150) to attendee_date
+--       AND fixed the spelling error
+--       AND Added event_id to connect to event
+--       ANd Made attendee_id and event_id both primary keys
+-- 6. memberOf table: Removed primary key since a person can have multiple positions
 -- ============================================================================
 
 
@@ -32,7 +40,7 @@
 -- Statement 06: Brandon Del Mundo: 50%, Christine Uy: 50%
 -- Statement 07: Brandon Del Mundo: 50%, Christine Uy: 50%
 -- Statement 08: Brandon Del Mundo: 50%, Christine Uy: 50%
--- Statement 9: Brandon Del Mundo: 50%, Christine Uy: 50%
+-- Statement 09: Brandon Del Mundo: 50%, Christine Uy: 50%
 -- Statement 10: Brandon Del Mundo: 50%, Christine Uy: 50%
 
 --SECTION 2: INTERMEDIATE STATEMENTS
@@ -424,61 +432,237 @@ WHERE mo.member_type = 'President';
 -- ============================================================================
 
 -- ----------------------------------------------------------------------------
--- Statement 21: 
--- Explanation: 
+-- Statement 21: Overlapping events using subquery with EXISTS
+-- Explanation: Finds events that are over lapping in time.
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 2: QUERY 21:  ==========' AS " ";
+SELECT '========== SECTION 2: QUERY 21: Overlapping events using subquery with EXISTS ==========' AS " ";
+
+SELECT 
+    e.event_name,
+    e.date,
+    e.start_time,
+    e.end_time
+FROM Event AS e 
+WHERE EXISTS (
+
+    SELECT e2.event_name
+    FROM Event As e2 
+    WHERE e2.date = e.date
+        AND (e2.event_id <> e.event_id)
+        AND (e.start_time < e2.start_time)
+        AND (e.end_time > e2.start_time)
+)
+ORDER BY e.date ASC, e.start_time ASC, e.end_time;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 22: 
--- Explanation: 
+-- Statement 22: Classify rooms using conditional CASE expressions
+-- Explanation: Categorizes rooms as Small (capacity of 1–30), Medium (capacity of 31–75), 
+--      or Large (capacity greater than 75), excluding rooms with 0 capacity. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 22:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 22: Classify rooms using conditional CASE expressions ==========' AS " ";
+
+SELECT
+    b.abbreviation,
+    r.room_number,
+    r.capacity,
+    CASE
+        WHEN r.capacity <= 30 THEN 'Small'
+        WHEN r.capacity <= 75 THEN 'Medium'
+        ELSE 'Large'
+    END AS room_size
+FROM Room AS r
+JOIN Building AS b
+    ON r.building_id = b.building_id
+WHERE r.capacity > 0
+ORDER BY b.abbreviation ASC;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 23: 
--- Explanation: 
+-- Statement 23: View Creation showing the number of events hosted by a club
+-- Explanation: Creates a view to show the number of events a club has hosted. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 23:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 23: View Creation showing the number of events hosted by a club ==========' AS " ";
+
+-- creates view 
+DROP VIEW IF EXISTS View_ClubEventCounts;
+
+CREATE VIEW View_ClubEventCounts AS
+SELECT
+    c.club_name,
+    COUNT(e.event_id) AS total_events
+FROM Club AS c
+LEFT JOIN Event AS e
+    ON c.club_name = e.club_name
+GROUP BY c.club_name;
+
+-- shows view results
+SELECT *
+FROM ClubEventCounts
+ORDER BY total_events DESC;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 24: 
--- Explanation:  
+-- Statement 24: Order of Bobcats on Broadway events using ROW_NUMBER()
+-- Explanation:  Assigns a sequential number of events from a club (ex. Bobcats on 
+--      Brodway) by using window function ROW_NUMBERS(). Number based on event date
+--      and starts with the earlist event.
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 24:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 24: Order of Bobcats on Broadway events using ROW_NUMBER()  ==========' AS " ";
+
+SELECT
+    club_name,
+    event_name,
+    date,
+    ROW_NUMBER() OVER (
+        PARTITION BY club_name
+        ORDER BY date
+    ) AS event_number
+FROM Event
+WHERE club_name = 'Bobcats on Broadway';
+
 
 -- ----------------------------------------------------------------------------
--- Statement 25: 
--- Explanation: 
+-- Statement 25: Ranks the top 5 clubs with the most events. 
+-- Explanation: Lists the top 5 clubs that host the most events. Clubs that have the
+--      same number of events share the rank. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 25:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 25:  Ranks the top 5 clubs with the most events.  ==========' AS " ";
+
+SELECT *
+FROM (
+    SELECT
+        club_name,
+        total_events,
+        DENSE_RANK() OVER (
+            ORDER BY total_events DESC
+        ) AS club_rank
+    FROM (
+        SELECT
+            club_name,
+            COUNT(*) AS total_events
+        FROM Event
+        GROUP BY club_name
+    )
+)
+WHERE club_rank <= 5
+ORDER BY club_rank;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 26: 
--- Explanation: 
+-- Statement 26: Find the most popular event for each club
+-- Explanation: Using the window function ROW_number to find a clubs most attended event.
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 26:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 26: Find the most popular event for each club ==========' AS " ";
+
+SELECT
+    club_name,
+    event_name,
+    total_attendance
+FROM (
+    SELECT
+        e.club_name,
+        e.event_name,
+        COUNT(ea.attendee_id) AS total_attendance,
+        ROW_NUMBER() OVER (
+            PARTITION BY e.club_name
+            ORDER BY COUNT(ea.attendee_id) DESC
+        ) AS event_rank
+    FROM Event AS e
+    LEFT JOIN EventAttendance AS ea
+        ON e.event_id = ea.event_id
+    GROUP BY e.event_id, e.club_name, e.event_name
+)
+WHERE event_rank = 1;
+
 
 -- ----------------------------------------------------------------------------
--- Statement 27: 
--- Explanation: 
+-- Statement 27: Classify club based on number of events (CASE)
+-- Explanation: Classify clubs as 'Very Active' (20 or more events), 'Active'
+--      (10 - 19 events), 'Low Activity' (1 - 9 events), or states club has no events. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 27:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 27: Classify club based on number of events (CASE)  ==========' AS " ";
+
+SELECT
+    club_name,
+    total_events,
+    CASE
+        WHEN total_events >= 20 THEN 'Very Active'
+        WHEN total_events >= 10 THEN 'Active'
+        WHEN total_events >= 1 THEN 'Low Activity'
+        ELSE 'No Events'
+    END AS activity_level
+FROM (
+    SELECT
+        c.club_name,
+        COUNT(e.event_id) AS total_events
+    FROM Club AS c
+    LEFT JOIN Event AS e
+        ON c.club_name = e.club_name
+    GROUP BY c.club_id, c.club_name
+)
+ORDER BY total_events DESC;
 
 -- ----------------------------------------------------------------------------
--- Statement 28: 
--- Explanation: 
+-- Statement 28: Find clubs hosting events in the first week of the months (INTERSECT)
+-- Explanation: Shows the clubs that host at least one event during the first 
+--      week of the month. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 28:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 28: Find clubs hosting events in the first week of the months (INTERSECT) ==========' AS " ";
+
+SELECT club_name
+FROM Event
+WHERE date BETWEEN '2026-10-01' AND '2026-10-07'
+
+INTERSECT
+
+SELECT club_name
+FROM Event
+WHERE date BETWEEN '2026-11-01' AND '2026-11-07'
+
+ORDER BY club_name;
 
 -- ----------------------------------------------------------------------------
--- Statement 29: 
--- Explanation: 
+-- Statement 29: Show clubs most recent events. 
+-- Explanation: Uses the window function ROW_NUMBER to find each clubs most
+--      recent event. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 29:  ==========' AS " ";
+SELECT '========== SECTION 3: QUERY 29: Show clubs most recent events. ==========' AS " ";
+
+SELECT
+    club_name,
+    event_name,
+    date
+FROM (
+    SELECT
+        club_name,
+        event_name,
+        date,
+        ROW_NUMBER() OVER (
+            PARTITION BY club_name
+            ORDER BY date DESC
+        ) AS event_number
+    FROM Event
+)
+WHERE event_number = 1
+ORDER BY club_name;
 
 -- ----------------------------------------------------------------------------
--- Statement 30: 
--- Explanation: 
+-- Statement 30: View showing number of events by location. 
+-- Explanation: Creates a view that shows the number of events in each location. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 3: QUERY 30:  ==========' AS " ";
+
+SELECT '========== SECTION 3: QUERY 30: View showing number of events by location.  ==========' AS " ";
+
+DROP VIEW IF EXISTS View_EventsByLocation;
+
+CREATE VIEW View_EventsByLocation AS
+SELECT
+    location,
+    COUNT(*) AS total_events
+FROM Event
+GROUP BY location;
+
+SELECT *
+FROM View_EventsByLocation
+ORDER BY total_events DESC;

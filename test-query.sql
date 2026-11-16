@@ -17,22 +17,22 @@ PRAGMA foreign_keys = ON;
             -- puts output in query-results and stops at first error found & sends error message to the file
 
 
-
-
 -- ----------------------------------------------------------------------------
--- Statement 20: List president of each club (mult-table JOIN)
--- Explanation: List the club, its president and the president's email of each club.
+-- Statement 30: View showing number of events by location. 
+-- Explanation: Creates a view that shows the number of events in each location. 
 -- ----------------------------------------------------------------------------
-SELECT '========== SECTION 2: QUERY 20: List president of each club (mult-table JOIN) ==========' AS " ";
 
-SELECT 
-    c.club_name,
-    s.first_name,
-    s.last_name,
-    s.email_name
-FROM Student AS s 
-JOIN memberOf AS mo 
-    ON s.id = mo.id 
-JOIN Club AS c 
-    ON mo.club_affiliation = c.club_name
-WHERE mo.member_type = 'President';
+SELECT '========== SECTION 3: QUERY 30: View showing number of events by location.  ==========' AS " ";
+
+DROP VIEW IF EXISTS View_EventsByLocation;
+
+CREATE VIEW View_EventsByLocation AS
+SELECT
+    location,
+    COUNT(*) AS total_events
+FROM Event
+GROUP BY location;
+
+SELECT *
+FROM View_EventsByLocation
+ORDER BY total_events DESC;
